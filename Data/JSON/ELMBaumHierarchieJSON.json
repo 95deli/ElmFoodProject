@@ -1,0 +1,768 @@
+{
+    "data": {
+      "id": "Calories of most common foods and drinks per 100 gram"
+    },
+    "children": [
+      {
+        "data": {
+          "id": "Food"
+        },
+        "children": [
+          {
+            "data": {
+              "id": "Cereal Products"
+            },
+            "children": [
+              {
+                "data": {
+                  "id": "1-100 calories"
+                },
+                "children": [
+                    {"data": { "id":"Farina" }},
+                    {"data": { "id":"Cooked corn grits" }},
+                    {"data": { "id":"Oatmeal" }},
+                    {"data": { "id":"Spanish rice" }}
+                ]
+              },
+              {
+                "data": {
+                  "id": "101-200 calories"
+                }, 
+                "children": [
+                    {"data": { "id":"Macaroni" }},
+                    {"data": { "id":"Noodles" }},
+                    {"data": { "id":"Corn bread ground meal" }}
+                ]
+              },
+              {
+                "data": {
+                  "id": "201-300 calories"
+                },
+                "children": [
+                    {"data": { "id":"Pancakes" }},
+                    {"data": { "id":"Rye" }},
+                    {"data": { "id":"Pizza" }},
+                    {"data": { "id":"Whole wheat bread" }},
+                    {"data": { "id":"Cracked wheat bread" }},
+                    {"data": { "id":"Rice polish" }},       
+                    {"data": { "id":"White bread" }},
+                    {"data": { "id":"Muffins" }}        
+                ]
+              },
+              {
+                "data": {
+                  "id": "301-400 calories"
+                },
+                "children": [
+                    {"data": { "id":"Corn meal" }},
+                    {"data": { "id":"Waffles" }},
+                    {"data": { "id":"Whole wheat" }},
+                    {"data": { "id":"Biscuits" }},
+                    {"data": { "id":"Unrefined wheat meal cereal" }},
+                    {"data": { "id":"Shredded wheat biscuit" }},
+                    {"data": { "id":"Rice" }},
+                    {"data": { "id":"Wheat germ" }},
+                    {"data": { "id":"Wheat" }},
+                    {"data": { "id":"Presweetened puffed wheat" }},
+                    {"data": { "id":"Rice flakes" }},
+                    {"data": { "id":"Crackers" }},
+                    {"data": { "id":"Puffed rice" }},
+                    {"data": { "id":"Toasted wheat germ cereal" }}                   
+                ]
+              },
+              {
+                "data": {
+                  "id": "401-500 calories"
+                },
+                "children": [
+                    {"data": { "id":"Soda" }},
+                    {"data": { "id":"Flour" }},
+                    {"data": { "id":"Cornflakes" }},
+                    {"data": { "id":"Bran flakes" }}
+                ]
+              },
+              {
+                "data": {
+                  "id": "501-600 calories"
+                },
+                "children": [
+                    {"data": { "id":"Salted popcorn" }}
+                ]
+              }
+            ]
+          },
+          {
+            "data": {
+              "id": "Dairy Products"
+            },
+            "children": [
+              {
+                "data": {
+                  "id": "1-100 calories"
+                },
+                "children": [
+                    {"data": { "id":"Skim milk" }},
+                    {"data": { "id":"Uncreamed cheese" }}                    
+                ]
+              },
+              {
+                "data": {
+                  "id": "101-200 calories"
+                },
+                "children": [
+                    {"data": { "id":"Cheese" }},
+                    {"data": { "id":"Custard" }},
+                    {"data": { "id":"Cream or half-and-half" }},
+                    {"data": { "id":"Eggs" }},
+                    {"data": { "id":"Ice cream" }},
+                    {"data": { "id":"Scrambled or fried eggs" }}                   
+                ]
+              },
+              {
+                "data": {
+                  "id": "301-400 calories"
+                },
+                "children": [
+                    {"data": { "id":"Whipping milk" }},
+                    {"data": { "id":"Cream cheese" }},
+                    {"data": { "id":"Processed cheese" }},
+                    {"data": { "id":"Roquefort type" }},
+                    {"data": { "id":"Swiss" }}                   
+                ]
+              },
+              {
+                "data": {
+                  "id": "401-500 calories"
+                }, 
+                "children": [
+                    {"data": { "id":"Cheddar" }}                  
+                ]
+              },
+              {
+                "data": {
+                  "id": "401-500 calories"
+                }, 
+                "children": [
+                    {"data": { "id":"Powdered milk" }}      
+                ]
+              }
+            ]
+          },
+          {
+            "data": {
+              "id": "Sweets"
+            },
+            "children": [
+              {
+                "data": {
+                  "id": "1-100 calories"
+                }, 
+                "children":[ 
+                    {"data": { "id":"Gelatin" }}    
+                ]
+              },
+              {
+                "data": {
+                  "id": "101-200 calories"
+                },
+                "children": [
+                    {"data": { "id":"Tapioca cream pudding" }},
+                    {"data": { "id":"Apple betty" }},
+                    {"data": { "id":"Bread pudding" }},
+                    {"data": { "id":"Chocolate syrup" }}    
+                ]
+              },
+              {
+                "data": {
+                  "id": "201-300 calories"
+                },
+                "children": [
+                    {"data": { "id":"Custard" }},
+                    {"data": { "id":"Pumpkin pie" }},
+                    {"data": { "id":"Lemon meringue" }},
+                    {"data": { "id":"Cherry pie" }},
+                    {"data": { "id":"Mince" }},
+                    {"data": { "id":"Cakes" }},
+                    {"data": { "id":"Sponge cake" }}     
+                ]
+              },
+              {
+                "data": {
+                  "id": "301-400 calories"
+                },
+                "children": [
+                    {"data": { "id":"Cupcake" }},
+                    {"data": { "id":"Hard candies" }},
+                    {"data": { "id":"Marshmallows" }},
+                    {"data": { "id":"Gingerbread" }},
+                    {"data": { "id":"Chocolate fudge" }},
+                    {"data": { "id":"Fruit cake" }},
+                    {"data": { "id":"Puddings sugar" }}    
+                ]
+              },
+              {
+                "data": {
+                  "id": "401-500 calories"
+                },
+                "children": [
+                    {"data": { "id":"Doughnuts" }},
+                    {"data": { "id":"Fudge" }},
+                    {"data": { "id":"Candy" }},
+                    {"data": { "id":"Sugar" }},
+                    {"data": { "id":"Chocolate creams" }}      
+                ]
+              },
+              {
+                "data": {
+                  "id": "501-600 calories"
+                },
+                "children": [
+                    {"data": { "id":"Milk chocolate" }}
+                ]
+              }
+            ]           
+          },
+          {
+            "data": {
+              "id": "Fats"
+            },
+            "children": [
+              {
+                "data": {
+                  "id": "301-400 calories"
+                }, 
+                "children": [
+                    {"data": { "id":"Yolks" }},
+                    {"data": { "id":"French dressing" }}    
+                ]
+              },
+              {
+                "data": {
+                  "id": "401-500 calories"
+                },
+                "children": [
+                    {"data": { "id":"Thousand Island sauce" }}    
+                ]
+              },
+              {
+                "data": {
+                  "id": "601-700 calories"
+                },
+                "children": [
+                    {"data": { "id":"Hydrogenated cooking fat" }}    
+                ]
+              },
+              {
+                "data": {
+                  "id": "701-800 calories"
+                },
+                "children": [
+                    {"data": { "id":"Butter" }},
+                    {"data": { "id":"Margarine" }},
+                    {"data": { "id":"Mayonnaise" }}    
+                ]
+              },
+              {
+                "data": {
+                  "id": "801-900 calories"
+                },
+                "children": [
+                    {"data": { "id":"Corn oil" }},
+                    {"data": { "id":"Olive oil" }},
+                    {"data": { "id":"Safflower seed oil" }} 
+                ]
+              },
+              {
+                "data": {
+                  "id": "901-1000 calories"
+                },
+                "children": [
+                    {"data": { "id":"Lard" }}
+                ]
+              }
+            ]
+          },
+          {
+            "data": {
+              "id": "Seafood"
+            },
+            "children": [
+              {
+                "data": {
+                  "id": "1-100 calories"
+                }, 
+                "children": [
+                    {"data": { "id":"Lobster" }}    
+                ]
+              },
+              {
+                "data": {
+                  "id": "101-200 calories"
+                },
+                "children": [
+                    {"data": { "id":"Clams" }},
+                    {"data": { "id":"Scallops" }},
+                    {"data": { "id":"Crab meat" }},
+                    {"data": { "id":"Shrimp" }},
+                    {"data": { "id":"Salmon" }},
+                    {"data": { "id":"Oyster stew" }},
+                    {"data": { "id":"Haddock" }},
+                    {"data": { "id":"Cod" }},
+                    {"data": { "id":"Fried fish sticks" }},
+                    {"data": { "id":"Swordfish" }},
+                    {"data": { "id":"Halibut" }},
+                    {"data": { "id":"Mackerel" }},
+                    {"data": { "id":"Flounder" }},
+                    {"data": { "id":"Shad" }},
+                    {"data": { "id":"Tuna" }}    
+                ]
+              },
+              {
+                "data": {
+                  "id": "201-300 calories"
+                },
+                "children": [
+                    {"data": { "id":"Herring" }},
+                    {"data": { "id":"Sardines" }}
+                ]
+              }
+            ]
+          },
+          {
+            "data": {
+              "id": "Fruits"
+            },
+            "children": [
+              {
+                "data": {
+                  "id": "1-100 calories"
+                }, 
+                "children": [
+                    {"data": { "id":"Cantaloupe" }},
+                    {"data": { "id":"Watermelon" }},
+                    {"data": { "id":"Apple vinegar" }},
+                    {"data": { "id":"Grapefruit" }},
+                    {"data": { "id":"Watercress stems" }},
+                    {"data": { "id":"Peaches" }},
+                    {"data": { "id":"Oranges" }},
+                    {"data": { "id":"Tangerines" }},
+                    {"data": { "id":"Strawberries" }},
+                    {"data": { "id":"Papaya" }},
+                    {"data": { "id":"Sour cherries" }},
+                    {"data": { "id":"Stewed or canned apples" }},
+                    {"data": { "id":"Grapes" }},
+                    {"data": { "id":"Apricots" }},
+                    {"data": { "id":"Prunes" }},
+                    {"data": { "id":"Pineapple" }},
+                    {"data": { "id":"Apples" }},
+                    {"data": { "id":"Pears" }},
+                    {"data": { "id":"Banana" }},
+                    {"data": { "id":"Raspberries" }},
+                    {"data": { "id":"Sweet cherries" }},
+                    {"data": { "id":"Blackberries" }},
+                    {"data": { "id":"Persimmons" }},
+                    {"data": { "id":"Plums" }},
+                    {"data": { "id":"Figs" }},
+                    {"data": { "id":"Blueberries" }}
+                ]
+              },
+              {
+                "data": {
+                  "id": "101-200 calories"
+                },
+                "children": [
+                    {"data": { "id":"Olives" }},
+                    {"data": { "id":"Sweetened rhubarb" }},
+                    {"data": { "id":"Avocado" }},
+                    {"data": { "id":"Sweetened cranberry sauce" }}    
+                ]
+              },
+              {
+                "data": {
+                  "id": "201-300 calories"
+                },
+                "children": [
+                    {"data": { "id":"Raisins" }},
+                    {"data": { "id":"Dates" }},
+                    {"data": { "id":"Dried figs" }},
+                    {"data": { "id":"Dried apricots" }}
+                ]
+              }
+            ]
+          },
+          {
+            "data": {
+              "id": "Jellies"
+            },
+            "children": [
+              {
+                "data": {
+                  "id": "201-300 calories"
+                }, 
+                "children": [
+                    {"data": { "id":"Molasses" }},
+                    {"data": { "id":"Jellies" }},
+                    {"data": { "id":"Cane syrup" }},
+                    {"data": { "id":"Syrup" }},
+                    {"data": { "id":"Table blends sugar" }},
+                    {"data": { "id":"Honey" }} 
+                ]
+              },
+              {
+                "data": {
+                  "id": "301-400 calories"
+                },
+                "children": [
+                    {"data": { "id":"Brown sugar" }}    
+                ]
+              }
+            ]
+          },
+          {
+            "data": {
+              "id": "Meat"
+            },
+            "children": [
+              {
+                "data": {
+                  "id": "1-100 calories"
+                }, 
+                "children": [
+                    {"data": { "id":"Stew corned beef hash" }}    
+                ]
+              },
+              {
+                "data": {
+                  "id": "101-200 calories"
+                },
+                "children": [
+                    {"data": { "id":"Fried chicken livers" }},
+                    {"data": { "id":"Canned corned beef hash" }}    
+                ]
+              },
+              {
+                "data": {
+                  "id": "201-300 calories"
+                },
+                "children": [
+                    {"data": { "id":"Dried corned beef hash" }},
+                    {"data": { "id":"Pot pie" }},
+                    {"data": { "id":"Corned beef" }},
+                    {"data": { "id":"Chicken" }},
+                    {"data": { "id":"Veal" }},
+                    {"data": { "id":"Lean steak" }},
+                    {"data": { "id":"Pork chop" }},
+                    {"data": { "id":"Turkey" }},
+                    {"data": { "id":"Beef" }},
+                    {"data": { "id":"Hamburger" }},
+                    {"data": { "id":"Fried chicken" }},
+                    {"data": { "id":"Canned and spiced ham" }},
+                    {"data": { "id":"Roasted chicken" }}      
+                ]
+              },
+              {
+                "data": {
+                  "id": "301-400 calories"
+                },
+                "children": [
+                    {"data": { "id":"Braised lamb shoulder" }},
+                    {"data": { "id":"Pan-broiled ham" }},
+                    {"data": { "id":"Roast" }},
+                    {"data": { "id":"Pork roast" }},
+                    {"data": { "id":"Roasted lamb leg" }},
+                    {"data": { "id":"Domestic duck" }},
+                    {"data": { "id":"Steak" }}        
+                ]
+              },
+              {
+                "data": {
+                  "id": "401-500 calories"
+                },
+                "children": [
+                    {"data": { "id":"Broiled lamb chop" }},
+                    {"data": { "id":"Roast beef" }},
+                    {"data": { "id":"Pork sausage" }}          
+                ]
+              },
+              {
+                "data": {
+                  "id": "501-600 calories" 
+                },
+                "children": [
+                    {"data": { "id":"Bacon" }}         
+                ]
+              }
+            ]
+          },
+          {
+            "data": {
+              "id": "Nuts"
+            },
+            "children": [
+              {
+                "data": {
+                  "id": "501-600 calories"
+                }, 
+                "children": [
+                    {"data": { "id":"Sweetened coconut" }},
+                    {"data": { "id":"Cashews" }},
+                    {"data": { "id":"Sesame seeds" }},
+                    {"data": { "id":"Sunflower seeds" }},
+                    {"data": { "id":"Natural peanut butter" }},
+                    {"data": { "id":"Peanuts" }},
+                    {"data": { "id":"Peanut butter" }}    
+                ]
+              },
+              {
+                "data": {
+                  "id": "601-700 calories"
+                },
+                "children": [
+                    {"data": { "id":"Almonds" }},
+                    {"data": { "id":"Roasted and salted almonds" }},
+                    {"data": { "id":"Walnuts" }},
+                    {"data": { "id":"Brazil nuts" }},
+                    {"data": { "id":"Pecans" }}
+                ]
+              }
+            ]
+          },
+          {
+            "data": {
+              "id": "Soups"
+            },
+            "children": [
+              {
+                "data": {
+                  "id": "1-100 calories"
+                }, 
+                "children": [
+                    {"data": { "id":"Chicken soup" }},
+                    {"data": { "id":"Vegetable soup" }},
+                    {"data": { "id":"Clam chowder" }},
+                    {"data": { "id":"Beef soup" }},
+                    {"data": { "id":"Noodle soup" }},
+                    {"data": { "id":"Split pea soup" }},
+                    {"data": { "id":"Tomato soup" }},
+                    {"data": { "id":"Bean soup" }},
+                    {"data": { "id":"Cream soup" }}    
+                ]
+              }
+            ]
+          },
+          {
+            "data": {
+              "id": "Vegetables"
+            },
+            "children": [
+              {
+                "data": {
+                  "id": "1-100 calories"
+                }, 
+                "children": [
+                    {"data": { "id":"Beetroots" }},
+                    {"data": { "id":"Canned mushrooms" }},
+                    {"data": { "id":"Cucumbers" }},
+                    {"data": { "id":"Iceberg" }},
+                    {"data": { "id":"Lettuce" }},
+                    {"data": { "id":"Squash" }},
+                    {"data": { "id":"Eggplant" }},
+                    {"data": { "id":"Endive" }},
+                    {"data": { "id":"Asparagus" }},
+                    {"data": { "id":"Beans" }},
+                    {"data": { "id":"Celery" }},
+                    {"data": { "id":"Chard" }},
+                    {"data": { "id":"Radishes" }},
+                    {"data": { "id":"Tomatoes" }},
+                    {"data": { "id":"Sauerkraut" }},
+                    {"data": { "id":"Mustard greens" }},
+                    {"data": { "id":"Steamed cabbage" }},
+                    {"data": { "id":"Cauliflower" }},
+                    {"data": { "id":"Green sweet peppers" }},
+                    {"data": { "id":"Steamed turnips" }},
+                    {"data": { "id":"Spinach" }},
+                    {"data": { "id":"Canned peppers" }},
+                    {"data": { "id":"Beet greens" }},
+                    {"data": { "id":"Kohlrabi" }},
+                    {"data": { "id":"Broccoli" }},
+                    {"data": { "id":"Carrots" }},
+                    {"data": { "id":"Turnip greens" }},
+                    {"data": { "id":"Okra" }},
+                    {"data": { "id":"Rutabagas" }},
+                    {"data": { "id":"Bean sprouts" }},
+                    {"data": { "id":"Collards" }},
+                    {"data": { "id":"Onions" }},
+                    {"data": { "id":"Grated carrots" }},
+                    {"data": { "id":"Kale" }},
+                    {"data": { "id":"Parsley" }},
+                    {"data": { "id":"Dandelion greens" }},
+                    {"data": { "id":"Brussels sprouts" }},
+                    {"data": { "id":"Artichoke" }},
+                    {"data": { "id":"Heated peas" }},
+                    {"data": { "id":"Parsnips" }},
+                    {"data": { "id":"Peas" }},
+                    {"data": { "id":"Steamed peas" }},
+                    {"data": { "id":"Frozen peas" }},
+                    {"data": { "id":"Steamed before peeling potatoes" }},
+                    {"data": { "id":"Cooked or canned corn" }},
+                    {"data": { "id":"Lima" }},
+                    {"data": { "id":"Tomato catsup" }},
+                    {"data": { "id":"Red kidney" }},
+                    {"data": { "id":"Corn" }},
+                    {"data": { "id":"Baked potatoes" }}    
+                ]
+              },
+              {
+                "data": {
+                  "id": "101-200 calories"  
+                },
+                "children": [
+                    {"data": { "id":"Lentils" }},
+                    {"data": { "id":"Split cooked peas" }},
+                    {"data": { "id":"Soybeans" }},
+                    {"data": { "id":"Dry and cooked lima" }},
+                    {"data": { "id":"Sweet potatoes" }}      
+                ]
+              },
+              {
+                "data": {
+                  "id": "201-300 calories"  
+                },
+                "children": [
+                    {"data": { "id":"French-fried potatoes" }}      
+                ]
+              },
+              {
+                "data": {
+                  "id": "501-600 calories"  
+                },
+                "children": [
+                    {"data": { "id":"Potato chips" }}      
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "data": {
+          "id": "Drinks"
+        },
+        "children": [
+          {
+            "data": {
+              "id": "Dairy Products"
+            },
+            "children": [
+              {
+                "data": {
+                    "id": "1-100 calories"
+                },
+                "children": [
+                    {"data": { "id":"Milk skim" }},
+                    {"data": { "id":"Buttermilk" }},
+                    {"data": { "id":"Cows milk" }},
+                    {"data": { "id":"Goats milk" }},
+                    {"data": { "id":"Cocoa" }},
+                    {"data": { "id":"Fortified milk" }}    
+                ]
+              },
+              {
+                "data": {
+                  "id": "101-200 calories"
+                }, 
+                "children":[
+                    {"data": { "id":"Ice milk" }}    
+                ]
+              }
+            ]
+          },
+          {
+            "data": {
+              "id": "Beverages"
+            },
+            "children": [
+              {
+                "data": {
+                  "id": "1-100 calories"
+                },
+                "children": [
+                    {"data": { "id":"Artificially sweetened carbonated drinks" }},
+                    {"data": { "id":"Club soda" }},
+                    {"data": { "id":"Coffee" }},
+                    {"data": { "id":"Tea" }},
+                    {"data": { "id":"Ginger ale" }},
+                    {"data": { "id":"Cola drinks" }},
+                    {"data": { "id":"Root beer" }},
+                    {"data": { "id":"Fruit flavored soda" }},
+                    {"data": { "id":"Beer" }}    
+                ]
+              },
+              {
+                "data": {
+                  "id": "101-200 calories"
+                },
+                "children": [
+                    {"data": { "id":"Wines" }}    
+                ]
+              },
+              {
+                "data": {
+                  "id": "201-300 calories"
+                }, 
+                "children": [
+                    {"data": { "id":"Gin" }}    
+                ]
+              }
+            ]
+          },
+          {
+            "data": {
+              "id": "Fruits"
+            },
+            "children": [
+              {
+                "data": {
+                  "id": "1-100 calories"
+                },
+                "children": [
+                    {"data": { "id":"Lemon juice" }},
+                    {"data": { "id":"Grapefruit juice" }},
+                    {"data": { "id":"Orange juice" }},
+                    {"data": { "id":"Pineapple juice" }},
+                    {"data": { "id":"Apple juice" }},
+                    {"data": { "id":"Apricots juice" }},
+                    {"data": { "id":"Grape juice" }},
+                    {"data": { "id":"Prune juice" }}    
+                ]
+              },
+              {
+                "data": {
+                  "id": "101-200 calories"
+                },
+                "children": [
+                    {"data": { "id":"Frozen limeade concentrate" }},
+                    {"data": { "id":"Frozen lemonade concentrate" }}    
+                ]
+              }
+            ]            
+          },
+          {
+            "data": {
+              "id": "Vegetables"
+            },
+            "children": [
+              {
+                "data": {
+                  "id": "1-100 calories"
+                },
+                "children": [
+                    {"data": { "id":"Tomato juice" }}    
+                ]
+              }
+            ]                    
+          }
+        ]
+      }     
+    ]
+}
