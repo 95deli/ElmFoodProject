@@ -79,19 +79,14 @@ main =
         { init = init
         , view = view
         , update = update
-        , subscriptions = subscriptions
+        , subscriptions = \m -> Sub.none
         }
 
 init : () -> ( Model, Cmd Msg )
 init () =
     ( { tree = TreeDiagram.node "" [], errorMsg = "Loading ..." }
-    , Http.get { url = "https://raw.githubusercontent.com/95deli/ElmFoodProject/main/Data/JSON/ELMBaumhierarchieJSON.json"
-    , expect = Http.expectJson GotTree jsonDecoding }
+    , Http.get { url = "https://raw.githubusercontent.com/95deli/ElmFoodProject/main/Data/JSON/ELMBaumhierarchieJSON.json", expect = Http.expectJson GotTree jsonDecoding }
     )
-
-subscriptions : Model -> Sub Msg
-subscriptions model =
-  Sub.none
 
 update : Msg -> Model -> ( Model, Cmd Msg )
 update msg model =
