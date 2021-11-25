@@ -12,15 +12,15 @@ import TypedSvg.Attributes exposing (fill, stroke, textAnchor, transform, fontFa
 import TypedSvg.Attributes.InPx exposing (cx, cy, r, x1, x2, y1, y2)
 import TypedSvg.Core exposing (Svg)
 import TypedSvg.Types as ST exposing (AnchorAlignment(..), Length(..), Paint(..), Transform(..))
-import TreeDiagram exposing (node, TreeOrientation, topToBottom)
-
-type alias Model =
-    { baum : TreeDiagram.Tree String
-    , errorMsg : String 
-    }
+import TreeDiagram exposing (TreeOrientation, topToBottom)
 
 type Msg
-    = GotFlare (Result Http.Error (TreeDiagram.Tree String))
+    = GotTree (Result Http.Error (TreeDiagram.Tree String))
+
+type alias Model =
+    { tree : TreeDiagram.Tree String
+    , errorMsg : String 
+    }
 
 type alias TreeLayout =
     { orientation : TreeOrientation
@@ -29,6 +29,95 @@ type alias TreeLayout =
     , siblingDistance : Int
     , padding : Int
     }
+
+treeLayout : TreeLayout
+treeLayout =
+    TreeLayout topToBottom
+            250 
+            200
+            30
+            100
+
+drawLine : ( Float, Float ) -> Svg msg
+drawLine ( targetX, targetY ) =
+    line
+        [ x1 0
+        , y1 0
+        , x2 targetX
+        , y2 targetY
+        , stroke (ST.Paint Color.darkGrey)
+        ]
+        []
+
+drawNode : String -> Svg msg
+drawNode n =
+    g
+        []
+        [ circle 
+            [ r 16
+                , stroke (Paint Color.black)
+                , fill (Paint Color.lightOrange)
+                , cx 0
+                , cy 0 
+            ] 
+            []
+        , text_ 
+            [ textAnchor AnchorEnd
+                , transform 
+                    [  Translate -5.0 -19.5 
+                     , Rotate 50.0 0.0 0.0
+                    ]
+            , fontFamily [ "calibri" ]
+            , fontSize (Px 12)
+            ] 
+            [ text n ]
+        ]
+
+main : Program () Model Msg
+main =
+    Browser.element
+        { init = init
+        , view = view
+        , update = update
+        , subscriptions = subscriptions
+        }
+
+init : () -> ( Model, Cmd Msg )
+init () =
+    ( { tree = TreeDiagram.node "" [], errorMsg = "Loading ..." }
+    , Http.get { url = "https://raw.githubusercontent.com/95deli/ElmFoodProject/main/Data/JSON/ELMBaumHierarchieJSON.json"
+    , expect = Http.expectJson GotTree jsonDecoding }
+    )
+
+subscriptions : Model -> Sub Msg
+subscriptions model =
+  Sub.none
+
+update : Msg -> Model -> ( Model, Cmd Msg )
+update msg model =
+    case msg of
+        GotTree (Ok newTree) ->
+            ( { model | tree = newTree, errorMsg = "No Error" }, Cmd.none )
+
+        GotTree (Err error) ->
+            ( { model
+                | tree = TreeDiagram.node "" []
+                , errorMsg =
+                    case error of
+                        Http.BadBody newErrorMsg ->
+                            newErrorMsg
+
+                        _ ->
+                            "Some other Error"
+              }
+            , Cmd.none
+            )
+
+view : Model -> Html Msg
+view model =
+    div []
+        [ TreeDiagram.Svg.draw treeLayout drawNode drawLine model.tree
+        ]
 
 jsonDecoding : Json.Decode.Decoder (TreeDiagram.Tree String)
 jsonDecoding =
@@ -48,79 +137,3 @@ jsonDecoding =
                     Json.Decode.lazy
                         (\_ -> jsonDecoding)
         )
-
-drawLine : ( Float, Float ) -> Svg msg
-drawLine ( targetX, targetY ) =
-    line
-        [ x1 0, y1 0, x2 targetX, y2 targetY, stroke (ST.Paint Color.darkGrey) ]
-        []
-
-drawNode : String -> Svg msg
-drawNode n =
-    g
-        []
-        [ circle 
-            [ r 16
-                , stroke (Paint Color.darkGray)
-                , fill (Paint Color.white)
-                , cx 0
-                , cy 0 
-            ] 
-            []
-        , text_ 
-            [ textAnchor AnchorEnd
-                , transform 
-                    [  Translate -5.5 -20.5 
-                     , Rotate 50.0 0.0 0.0
-                    ]
-            , fontFamily [ "calibri" ]
-            , fontSize (Px 12)
-            ] 
-            [ text n ]
-        ]
-
-newTreeLayout : TreeLayout
-newTreeLayout =
-    TreeLayout topToBottom 250 200 30 100
-
-
-main : Program () Model Msg
-main =
-    Browser.element
-        { init = init
-        , view = view
-        , update = update
-        , subscriptions = \m -> Sub.none
-        }
-
-init : () -> ( Model, Cmd Msg )
-init () =
-    ( { baum = TreeDiagram.node "" [], errorMsg = "Loading ..." }
-    , Http.get { url = "", expect = Http.expectJson GotFlare jsonDecoding }
-    )
-
-view : Model -> Html Msg
-view model =
-    div []
-        [ TreeDiagram.Svg.draw newTreeLayout drawNode drawLine model.baum
-        ]
-
-update : Msg -> Model -> ( Model, Cmd Msg )
-update msg model =
-    case msg of
-        GotFlare (Ok newTree) ->
-            ( { model | baum = newTree, errorMsg = "No Error" }, Cmd.none )
-
-        GotFlare (Err error) ->
-            ( { model
-                | baum = TreeDiagram.node "" []
-                , errorMsg =
-                    case error of
-                        Http.BadBody newErrorMsg ->
-                            newErrorMsg
-
-                        _ ->
-                            "Some other Error"
-              }
-            , Cmd.none
-            )
