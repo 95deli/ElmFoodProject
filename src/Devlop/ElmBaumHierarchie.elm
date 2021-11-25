@@ -1,4 +1,4 @@
-module Devlop.ElmBaumHierarchie exposing (..)
+module Devlop.ElmBaumhierarchie exposing (..)
 
 import Browser
 import Color
@@ -85,7 +85,7 @@ main =
 init : () -> ( Model, Cmd Msg )
 init () =
     ( { tree = TreeDiagram.node "" [], errorMsg = "Loading ..." }
-    , Http.get { url = "https://raw.githubusercontent.com/95deli/ElmFoodProject/main/Data/JSON/ELMBaumHierarchieJSON.json"
+    , Http.get { url = "https://raw.githubusercontent.com/95deli/ElmFoodProject/main/Data/JSON/ELMBaumhierarchieJSON.json"
     , expect = Http.expectJson GotTree jsonDecoding }
     )
 

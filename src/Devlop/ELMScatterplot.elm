@@ -28,6 +28,11 @@ type Model
     , yName : String
     }
 
+type Msg
+    = GotText (Result Http.Error String)
+    | ChangeX (Nutrients -> Float, String)
+    | ChangeY (Nutrients -> Float, String)
+
 type alias Nutrients =
     { name : String
     , calories : Float
@@ -38,11 +43,6 @@ type alias Nutrients =
     , carbs : Float
     }
 
-type Msg
-    = GotText (Result Http.Error String)
-    | ChangeX (Nutrients -> Float, String)
-    | ChangeY (Nutrients -> Float, String)
-
 type alias Point =
     { pointName : String, x : Float, y : Float }
 
@@ -51,6 +51,8 @@ type alias XYData =
     , yDescription : String
     , data : List Point
     }
+
+-- Insert URL
 
 getCsv : (Result Http.Error String -> Msg) -> Cmd Msg
 getCsv x = 
@@ -64,6 +66,8 @@ getCsv x =
             )
         |> Cmd.batch
 
+-- Insert .csv data
+
 list : List String
 list =
     [ ""]
@@ -74,6 +78,8 @@ csvStringToData csvRaw =
         |> Csv.Decode.decodeCsv decodingNutrients
         |> Result.toMaybe
         |> Maybe.withDefault []
+
+-- CSV decoding for relevant columns (nutrient types)
 
 decodingNutrients : Csv.Decode.Decoder (Nutrients -> a) a
 decodingNutrients =
@@ -100,11 +106,9 @@ w : Float
 w =
     900
 
-
 h : Float
 h =
     450
-
 
 padding : Float
 padding =
@@ -114,6 +118,8 @@ padding =
 radius : Float
 radius =
     5.0
+
+-- Axis section
 
 tickCount : Int
 tickCount =
