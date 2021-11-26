@@ -43,7 +43,7 @@ drawLine ( targetX, targetY ) =
         , y1 0
         , x2 targetX
         , y2 targetY
-        , stroke (ST.Paint Color.darkGrey)
+        , stroke (ST.Paint Color.darkGray)
         ]
         []
 
@@ -52,9 +52,9 @@ drawNode n =
     g
         []
         [ circle 
-            [ r 16
-                , stroke (Paint Color.black)
-                , fill (Paint Color.lightOrange)
+            [ r 14
+                , stroke (Paint Color.darkGray)
+                , fill (Paint Color.lightGreen)
                 , cx 0
                 , cy 0 
             ] 
@@ -62,11 +62,11 @@ drawNode n =
         , text_ 
             [ textAnchor AnchorEnd
                 , transform 
-                    [  Translate 0.5 17 
+                    [  Translate -5.5 -20.5 
                      , Rotate 50.0 0.0 0.0
                     ]
             , fontFamily [ "calibri" ]
-            , fontSize (Px 12)
+            , fontSize (Px 14)
             ] 
             [ text n ]
         ]
