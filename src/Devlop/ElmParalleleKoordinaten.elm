@@ -295,31 +295,31 @@ view model =
                             , ul[][
                                 li[][
                                     Html.text <| "Please choose a nutrient type for the second column."
-                                    , Html.button [onClick (Change1 (.proteins, "Proteins"))][Html.text "Proteins"]
-                                    , Html.button [onClick (Change1 (.fat, "Fat"))][Html.text "Fat"]
-                                    , Html.button [onClick (Change1 (.satfat, "Saturated Fat"))][Html.text "Saturated Fat"]
-                                    , Html.button [onClick (Change1 (.fiber, "Fiber"))][Html.text "Fiber"]
-                                    , Html.button [onClick (Change1 (.carbs, "Carbohydrates"))][Html.text "Carbohydrates"]
+                                    , Html.button [onClick (Change2 (.proteins, "Proteins"))][Html.text "Proteins"]
+                                    , Html.button [onClick (Change2 (.fat, "Fat"))][Html.text "Fat"]
+                                    , Html.button [onClick (Change2 (.satfat, "Saturated Fat"))][Html.text "Saturated Fat"]
+                                    , Html.button [onClick (Change2 (.fiber, "Fiber"))][Html.text "Fiber"]
+                                    , Html.button [onClick (Change2 (.carbs, "Carbohydrates"))][Html.text "Carbohydrates"]
                                 ]
                             ]
                             , ul[][
                                 li[][
                                     Html.text <| "Please choose a nutrient type for the third column."
-                                    , Html.button [onClick (Change1 (.proteins, "Proteins"))][Html.text "Proteins"]
-                                    , Html.button [onClick (Change1 (.fat, "Fat"))][Html.text "Fat"]
-                                    , Html.button [onClick (Change1 (.satfat, "Saturated Fat"))][Html.text "Saturated Fat"]
-                                    , Html.button [onClick (Change1 (.fiber, "Fiber"))][Html.text "Fiber"]
-                                    , Html.button [onClick (Change1 (.carbs, "Carbohydrates"))][Html.text "Carbohydrates"]
+                                    , Html.button [onClick (Change3 (.proteins, "Proteins"))][Html.text "Proteins"]
+                                    , Html.button [onClick (Change3 (.fat, "Fat"))][Html.text "Fat"]
+                                    , Html.button [onClick (Change3 (.satfat, "Saturated Fat"))][Html.text "Saturated Fat"]
+                                    , Html.button [onClick (Change3 (.fiber, "Fiber"))][Html.text "Fiber"]
+                                    , Html.button [onClick (Change3 (.carbs, "Carbohydrates"))][Html.text "Carbohydrates"]
                                 ]
                             ]
                             , ul[][
                                 li[][
                                     Html.text <| "Please choose a nutrient type for the fourth column."
-                                    , Html.button [onClick (Change1 (.proteins, "Proteins"))][Html.text "Proteins"]
-                                    , Html.button [onClick (Change1 (.fat, "Fat"))][Html.text "Fat"]
-                                    , Html.button [onClick (Change1 (.satfat, "Saturated Fat"))][Html.text "Saturated Fat"]
-                                    , Html.button [onClick (Change1 (.fiber, "Fiber"))][Html.text "Fiber"]
-                                    , Html.button [onClick (Change1 (.carbs, "Carbohydrates"))][Html.text "Carbohydrates"]
+                                    , Html.button [onClick (Change4 (.proteins, "Proteins"))][Html.text "Proteins"]
+                                    , Html.button [onClick (Change4 (.fat, "Fat"))][Html.text "Fat"]
+                                    , Html.button [onClick (Change4 (.satfat, "Saturated Fat"))][Html.text "Saturated Fat"]
+                                    , Html.button [onClick (Change4 (.fiber, "Fiber"))][Html.text "Fiber"]
+                                    , Html.button [onClick (Change4 (.carbs, "Carbohydrates"))][Html.text "Carbohydrates"]
                                 ]
                              ]
                                 , parallelCoordinatesPlot 600 2 plotData
