@@ -18,9 +18,7 @@ type Msg
     = GotTree (Result Http.Error (TreeDiagram.Tree String))
 
 type alias Model =
-    { tree : TreeDiagram.Tree String
-    , errorMsg : String 
-    }
+    { tree : TreeDiagram.Tree String, errorMsg : String }
 
 type alias TreeLayout =
     { orientation : TreeOrientation
@@ -34,9 +32,9 @@ treeLayout : TreeLayout
 treeLayout =
     TreeLayout topToBottom
             250 
-            200
-            30
-            100
+            20
+            600
+            300
 
 drawLine : ( Float, Float ) -> Svg msg
 drawLine ( targetX, targetY ) =
@@ -64,7 +62,7 @@ drawNode n =
         , text_ 
             [ textAnchor AnchorEnd
                 , transform 
-                    [  Translate -5.0 -19.5 
+                    [  Translate 0.5 17 
                      , Rotate 50.0 0.0 0.0
                     ]
             , fontFamily [ "calibri" ]
