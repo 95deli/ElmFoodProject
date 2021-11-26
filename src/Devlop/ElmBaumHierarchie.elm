@@ -83,7 +83,7 @@ main =
 init : () -> ( Model, Cmd Msg )
 init () =
     ( { tree = TreeDiagram.node "" [], errorMsg = "Loading ..." }
-    , Http.get { url = "https://raw.githubusercontent.com/95deli/ElmFoodProject/main/Data/JSON/ELMBaumhierarchieJSON.json"
+    , Http.get { url = "https://raw.githubusercontent.com/95deli/ElmFoodProject/main/Data/JSON/BaumhierarchieJSON.json"
     , expect = Http.expectJson GotTree jsonDecoding }
     )
 
