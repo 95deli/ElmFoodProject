@@ -12,7 +12,7 @@ import TypedSvg.Attributes exposing (fill, stroke, textAnchor, transform, fontFa
 import TypedSvg.Attributes.InPx exposing (cx, cy, r, x1, x2, y1, y2)
 import TypedSvg.Core exposing (Svg)
 import TypedSvg.Types as ST exposing (AnchorAlignment(..), Length(..), Paint(..), Transform(..))
-import TreeDiagram exposing (TreeOrientation, topToBottom)
+import TreeDiagram exposing (TreeLayout, topToBottom)
 
 type Msg
     = GotTree (Result Http.Error (TreeDiagram.Tree String))
@@ -20,13 +20,13 @@ type Msg
 type alias Model =
     { tree : TreeDiagram.Tree String, errorMsg : String }
 
-type alias TreeLayout =
-    { orientation : TreeOrientation
-    , levelHeight : Int
-    , subtreeDistance : Int
-    , siblingDistance : Int
-    , padding : Int
-    }
+-- type alias TreeLayout =
+--     { orientation : TreeOrientation
+--     , levelHeight : Int
+--     , subtreeDistance : Int
+--     , siblingDistance : Int
+--     , padding : Int
+--    }
 
 treeLayout : TreeLayout
 treeLayout =
@@ -83,7 +83,8 @@ main =
 init : () -> ( Model, Cmd Msg )
 init () =
     ( { tree = TreeDiagram.node "" [], errorMsg = "Loading ..." }
-    , Http.get { url = "https://raw.githubusercontent.com/95deli/ElmFoodProject/main/Data/JSON/ELMBaumhierarchieJSON.json", expect = Http.expectJson GotTree jsonDecoding }
+    , Http.get { url = "https://raw.githubusercontent.com/95deli/ElmFoodProject/main/Data/JSON/ELMBaumhierarchieJSON.json"
+    , expect = Http.expectJson GotTree jsonDecoding }
     )
 
 subscriptions : Model -> Sub Msg
