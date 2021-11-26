@@ -284,7 +284,7 @@ view model =
                         [
                             ul[][
                                 li[][
-                                    Html.text <| "Please choose a nutrient type for the first column."
+                                    Html.text <| "Please choose a nutrient type for the first axis. "
                                     , Html.button [onClick (Change1 (.proteins, "Proteins"))][Html.text "Proteins"]
                                     , Html.button [onClick (Change1 (.fat, "Fat"))][Html.text "Fat"]
                                     , Html.button [onClick (Change1 (.satfat, "Saturated Fat"))][Html.text "Saturated Fat"]
@@ -294,7 +294,7 @@ view model =
                             ]
                             , ul[][
                                 li[][
-                                    Html.text <| "Please choose a nutrient type for the second column."
+                                    Html.text <| "Please choose a nutrient type for the second axis. "
                                     , Html.button [onClick (Change2 (.proteins, "Proteins"))][Html.text "Proteins"]
                                     , Html.button [onClick (Change2 (.fat, "Fat"))][Html.text "Fat"]
                                     , Html.button [onClick (Change2 (.satfat, "Saturated Fat"))][Html.text "Saturated Fat"]
@@ -304,7 +304,7 @@ view model =
                             ]
                             , ul[][
                                 li[][
-                                    Html.text <| "Please choose a nutrient type for the third column."
+                                    Html.text <| "Please choose a nutrient type for the third axis. "
                                     , Html.button [onClick (Change3 (.proteins, "Proteins"))][Html.text "Proteins"]
                                     , Html.button [onClick (Change3 (.fat, "Fat"))][Html.text "Fat"]
                                     , Html.button [onClick (Change3 (.satfat, "Saturated Fat"))][Html.text "Saturated Fat"]
@@ -314,7 +314,7 @@ view model =
                             ]
                             , ul[][
                                 li[][
-                                    Html.text <| "Please choose a nutrient type for the fourth column."
+                                    Html.text <| "Please choose a nutrient type for the fourth axis. "
                                     , Html.button [onClick (Change4 (.proteins, "Proteins"))][Html.text "Proteins"]
                                     , Html.button [onClick (Change4 (.fat, "Fat"))][Html.text "Fat"]
                                     , Html.button [onClick (Change4 (.satfat, "Saturated Fat"))][Html.text "Saturated Fat"]
