@@ -36,7 +36,6 @@ type Model
 
 type alias Nutrients =
     { name : String
-    , calories : Float
     , proteins : Float
     , fat : Float
     , satfat : Float
@@ -86,7 +85,6 @@ decodingNutrients : Csv.Decode.Decoder (Nutrients -> a) a
 decodingNutrients =
     Csv.Decode.map Nutrients
         (Csv.Decode.field "name" Ok
-            |> Csv.Decode.andMap (Csv.Decode.field "calories"(String.toFloat >> Result.fromMaybe "error parsing string"))
             |> Csv.Decode.andMap (Csv.Decode.field "proteins"(String.toFloat >> Result.fromMaybe "error parsing string"))
             |> Csv.Decode.andMap (Csv.Decode.field "fat"(String.toFloat >> Result.fromMaybe "error parsing string"))
             |> Csv.Decode.andMap (Csv.Decode.field "satfat"(String.toFloat >> Result.fromMaybe "error parsing string"))
@@ -287,7 +285,6 @@ view model =
                             ul[][
                                 li[][
                                     Html.text <| "Please choose a nutrient type for the first column."
-                                    , Html.button [onClick (Change1 (.calories, "Calories"))][Html.text "Calories"]
                                     , Html.button [onClick (Change1 (.proteins, "Proteins"))][Html.text "Proteins"]
                                     , Html.button [onClick (Change1 (.fat, "Fat"))][Html.text "Fat"]
                                     , Html.button [onClick (Change1 (.satfat, "Saturated Fat"))][Html.text "Saturated Fat"]
@@ -298,7 +295,6 @@ view model =
                             , ul[][
                                 li[][
                                     Html.text <| "Please choose a nutrient type for the second column."
-                                    , Html.button [onClick (Change1 (.calories, "Calories"))][Html.text "Calories"]
                                     , Html.button [onClick (Change1 (.proteins, "Proteins"))][Html.text "Proteins"]
                                     , Html.button [onClick (Change1 (.fat, "Fat"))][Html.text "Fat"]
                                     , Html.button [onClick (Change1 (.satfat, "Saturated Fat"))][Html.text "Saturated Fat"]
@@ -309,7 +305,6 @@ view model =
                             , ul[][
                                 li[][
                                     Html.text <| "Please choose a nutrient type for the third column."
-                                    , Html.button [onClick (Change1 (.calories, "Calories"))][Html.text "Calories"]
                                     , Html.button [onClick (Change1 (.proteins, "Proteins"))][Html.text "Proteins"]
                                     , Html.button [onClick (Change1 (.fat, "Fat"))][Html.text "Fat"]
                                     , Html.button [onClick (Change1 (.satfat, "Saturated Fat"))][Html.text "Saturated Fat"]
@@ -320,7 +315,6 @@ view model =
                             , ul[][
                                 li[][
                                     Html.text <| "Please choose a nutrient type for the fourth column."
-                                    , Html.button [onClick (Change1 (.calories, "Calories"))][Html.text "Calories"]
                                     , Html.button [onClick (Change1 (.proteins, "Proteins"))][Html.text "Proteins"]
                                     , Html.button [onClick (Change1 (.fat, "Fat"))][Html.text "Fat"]
                                     , Html.button [onClick (Change1 (.satfat, "Saturated Fat"))][Html.text "Saturated Fat"]
@@ -336,7 +330,7 @@ update msg model =
         GotText result ->
             case result of
                 Ok fullText ->
-                    ( Success <| { data = nutrientsList [ fullText ], firstFunction = .calories, secondFunction = .proteins, thirdFunction = .fat, fourthFunction = .satfat , firstName = "Calories", secondName = "Proteins", thirdName = "Fat", fourthName = "Saturated Fat"}, Cmd.none )
+                    ( Success <| { data = nutrientsList [ fullText ], firstFunction = .proteins, secondFunction = .fat, thirdFunction = .satfat, fourthFunction = .fiber , firstName = "Proteins", secondName = "Fat", thirdName = "Saturated Fat", fourthName = "Fiber"}, Cmd.none )
 
                 Err _ ->
                     ( model, Cmd.none )
