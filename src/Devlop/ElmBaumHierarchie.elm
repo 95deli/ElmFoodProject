@@ -32,9 +32,9 @@ treeLayout : TreeLayout
 treeLayout =
     TreeLayout topToBottom
             250 
-            20
-            600
-            300
+            200
+            30
+            100
 
 drawLine : ( Float, Float ) -> Svg msg
 drawLine ( targetX, targetY ) =
