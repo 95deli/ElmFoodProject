@@ -35,7 +35,6 @@ type Msg
 
 type alias Nutrients =
     { name : String
-    , calories : Float
     , proteins : Float
     , fat : Float
     , satfat : Float
@@ -85,7 +84,6 @@ decodingNutrients : Csv.Decode.Decoder (Nutrients -> a) a
 decodingNutrients =
     Csv.Decode.map Nutrients
         (Csv.Decode.field "name" Ok
-            |> Csv.Decode.andMap (Csv.Decode.field "calories"(String.toFloat >> Result.fromMaybe "error parsing string"))
             |> Csv.Decode.andMap (Csv.Decode.field "proteins"(String.toFloat >> Result.fromMaybe "error parsing string"))
             |> Csv.Decode.andMap (Csv.Decode.field "fat"(String.toFloat >> Result.fromMaybe "error parsing string"))
             |> Csv.Decode.andMap (Csv.Decode.field "satfat"(String.toFloat >> Result.fromMaybe "error parsing string"))
@@ -296,8 +294,7 @@ view model =
                 [
                     ul[][
                         li[][
-                            Html.text <| "Please choose a nutrient type for the x-axis."
-                            , Html.button [onClick (ChangeX (.calories, "Calories"))][Html.text "Calories"]
+                            Html.text <| "Please choose a nutrient type for the x-axis. "
                             , Html.button [onClick (ChangeX (.proteins, "Proteins"))][Html.text "Proteins"]
                             , Html.button [onClick (ChangeX (.fat, "Fat"))][Html.text "Fat"]
                             , Html.button [onClick (ChangeX (.satfat, "Saturated Fat"))][Html.text "Saturated Fat"]
@@ -307,8 +304,7 @@ view model =
                     ]
                     , ul[][
                         li[][
-                            Html.text <| "Please choose a nutrient type for the y-axis."
-                            , Html.button [onClick (ChangeY (.calories, "Calories"))][Html.text "Calories"]
+                            Html.text <| "Please choose a nutrient type for the y-axis. "
                             , Html.button [onClick (ChangeY (.proteins, "Proteins"))][Html.text "Proteins"]
                             , Html.button [onClick (ChangeY (.fat, "Fat"))][Html.text "Fat"]
                             , Html.button [onClick (ChangeY (.satfat, "Saturated Fat"))][Html.text "Saturated Fat"]
@@ -325,7 +321,7 @@ update msg model =
         GotText result ->
             case result of
                 Ok fullText ->
-                    ( Success <| { data = nutrientsList [ fullText ], xFunction = .carbs, yFunction = .calories , xName = "Carbohydrates", yName = "Calories"}, Cmd.none )
+                    ( Success <| { data = nutrientsList [ fullText ], xFunction = .carbs, yFunction = .proteins , xName = "Carbohydrates", yName = "Proteins"}, Cmd.none )
 
                 Err _ ->
                     ( model, Cmd.none )
