@@ -65,7 +65,7 @@ getCsv x =
         |> List.map
             (\data ->
                 Http.get
-                    { url = "https://raw.githubusercontent.com/95deli/ElmFoodProject/main/Data/CSV" ++ data
+                    { url = "https://raw.githubusercontent.com/95deli/ElmFoodProject/main/Data/CSV/" ++ data
                     , expect = Http.expectString x
                     }
             )
@@ -73,7 +73,7 @@ getCsv x =
 
 list : List String
 list =
-    [ "nutrients.csv"]
+    [ "nutrientsfinal.csv"]
 
 csvStringToData : String -> List Nutrients
 csvStringToData csvRaw =

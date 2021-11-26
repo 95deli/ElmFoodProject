@@ -1,0 +1,280 @@
+id,name,supercategory,category,grams,calories,proteins,fat,satfat,fiber,carbs,caloriescategory
+11327,Artificially sweetened carbonated drinks,Drinks,Beverages,100,1,0,0,0,0,0,1-100 calories
+11328,Club soda,Drinks,Beverages,100,1,0,0,0,0,0,1-100 calories
+11333,Coffee,Drinks,Beverages,100,1,0,0,0,0,0.4,1-100 calories
+11334,Tea,Drinks,Beverages,100,2,0,0,0,0,0.4,1-100 calories
+11331,Ginger ale,Drinks,Beverages,100,30,0,0,0,0,8.1,1-100 calories
+11329,Cola drinks,Drinks,Beverages,100,40,0,0,0,0,11.0,1-100 calories
+11332,Root beer,Drinks,Beverages,100,40,0,0,0,0,10.1,1-100 calories
+11330,Fruit flavored soda,Drinks,Beverages,100,47,0,0,0,0,12.1,1-100 calories
+11323,Beer,Drinks,Beverages,100,48,0,0,0,0,1.7,1-100 calories
+11325,Wines,Drinks,Beverages,100,137,0,0,0,0,7.5,101-200 calories
+11324,Gin,Drinks,Beverages,100,250,0,0,0,0,0,201-300 calories
+11232,Farina,Food,Cereal Products,100,44,1.3,0,0,3.4,9.2,1-100 calories
+11228,Cooked corn grits,Food,Cereal Products,100,50,3.3,0,0,0.1,11.2,1-100 calories
+11240,Oatmeal,Food,Cereal Products,100,64,2.1,1.3,0.8,1.9,11.0,1-100 calories
+11257,Spanish rice,Food,Cereal Products,100,87,1.6,1.6,0,0.5,16.0,1-100 calories
+11236,Macaroni,Food,Cereal Products,100,111,3.6,0.7,0,0.1,22.9,101-200 calories
+11239,Noodles,Food,Cereal Products,100,125,4.4,1.3,1.3,0.1,23.1,101-200 calories
+11226,Corn bread ground meal,Food,Cereal Products,100,200,6.0,8.0,4.0,0.6,30.0,101-200 calories
+11241,Pancakes,Food,Cereal Products,100,231,6.5,8.3,0,0.1,25.9,201-300 calories
+11222,Rye,Food,Cereal Products,100,239,8.7,4.3,4.3,0.4,52.2,201-300 calories
+11243,Pizza,Food,Cereal Products,100,240,10.7,8.0,6.7,0,30.7,201-300 calories
+11224,Whole wheat bread,Food,Cereal Products,100,242,10.6,3.1,2.2,14.9,47.6,201-300 calories
+11221,Cracked wheat bread,Food,Cereal Products,100,261,8.7,4.3,4.3,0.4,52.2,201-300 calories
+11251,Rice polish,Food,Cereal Products,100,264,12.0,12.0,0,2.4,56.0,201-300 calories
+11223,White bread,Food,Cereal Products,100,270,8.6,3.3,2.6,2.0,50.4,201-300 calories
+11238,Muffins,Food,Cereal Products,100,281,8.3,10.4,8.3,0,39.6,201-300 calories
+11229,Corn meal,Food,Cereal Products,100,305,7.6,3.4,1.7,1.4,62.7,301-400 calories
+11259,Waffles,Food,Cereal Products,100,320,10.7,12.0,1.3,0.1,40.0,301-400 calories
+11235,Whole wheat,Food,Cereal Products,100,325,10.8,1.7,0,2.3,65.8,301-400 calories
+11219,Biscuits,Food,Cereal Products,100,342,7.9,10.5,7.9,0,47.4,301-400 calories
+11262,Unrefined wheat meal cereal,Food,Cereal Products,100,343,13.3,3.3,0,2.3,83.3,301-400 calories
+11258,Shredded wheat biscuit,Food,Cereal Products,100,357,10.7,3.6,0,2.5,82.1,301-400 calories
+11247,Rice,Food,Cereal Products,100,360,7.2,1.4,0,0.6,74.0,301-400 calories
+11260,Wheat germ,Food,Cereal Products,100,360,25.0,10.3,4.4,3.7,50.0,301-400 calories
+11234,Wheat,Food,Cereal Products,100,364,10.9,0.9,0,0.3,76.4,301-400 calories
+11246,Presweetened puffed wheat,Food,Cereal Products,100,375,3.6,0,0,2.1,92.9,301-400 calories
+11250,Rice flakes,Food,Cereal Products,100,383,6.7,0,0,0.3,86.7,301-400 calories
+11230,Crackers,Food,Cereal Products,100,393,7.1,7.1,0,0,71.4,301-400 calories
+11245,Puffed rice,Food,Cereal Products,100,393,0,0,0,0,85.7,301-400 calories
+11231,Soda,Food,Cereal Products,100,409,9.1,9.1,0,0,72.7,401-500 calories
+11233,Flour,Food,Cereal Products,100,418,35.5,20.0,0,2.6,30.0,401-500 calories
+11227,Cornflakes,Food,Cereal Products,100,440,8.0,0,0,0.4,100.0,401-500 calories
+11220,Bran flakes,Food,Cereal Products,100,468,12.0,0,0,0.4,128.0,401-500 calories
+11244,Salted popcorn,Food,Cereal Products,100,543,10.7,25.0,7.1,1.8,71.4,501-600 calories
+11261,Toasted wheat germ cereal,Food,Cereal Products,100,400,30.8,10.8,4.6,3.8,55.4,301-400 calories
+11001,Milk skim,Drinks,Dairy Products,100,37,3.7,0,0,0,5.3,1-100 calories
+11002,Buttermilk,Drinks,Dairy Products,100,52,3.7,2.0,0,0,5.3,1-100 calories
+11000,Cows milk,Drinks,Dairy Products,100,68,3.3,4.1,3.7,0,4.9,1-100 calories
+11008,Goats milk,Drinks,Dairy Products,100,68,3.3,4.1,3.3,0,4.5,1-100 calories
+11005,Powdered milk,Food,Dairy Products,100,500,26.2,27.2,23.3,0,37.9,501-600 calories
+11010,Cocoa,Drinks,Dairy Products,100,93,3.2,4.4,4.0,0,10.3,1-100 calories
+11004,Fortified milk,Drinks,Dairy Products,100,97,6.3,3.0,1.6,0.1,8.4,1-100 calories
+11011,Skim milk,Food,Dairy Products,100,51,7.2,1.6,1.2,0.4,5.2,1-100 calories
+11015,Ice milk,Drinks,Dairy Products,100,145,4.7,5.3,4.7,0,16.8,101-200 calories
+11017,Whipping milk,Food,Dairy Products,100,361,1.7,37.0,22.7,0.8,2.5,301-400 calories
+11018,Cheese,Food,Dairy Products,100,107,13.3,4.9,4.4,0,2.7,101-200 calories
+11013,Custard,Food,Dairy Products,100,115,5.2,5.6,4.4,0,11.3,101-200 calories
+11016,Cream or half-and-half,Food,Dairy Products,100,142,3.3,12.5,10.8,0,4.2,101-200 calories
+11026,Eggs,Food,Dairy Products,100,150,12.0,12.0,10.0,0,0,101-200 calories
+11019,Uncreamed cheese,Food,Dairy Products,100,87,16.9,0,0,0,2.7,1-100 calories
+11020,Cheddar,Food,Dairy Products,100,412,23.5,35.3,29.4,0,0,401-500 calories
+11022,Cream cheese,Food,Dairy Products,100,375,7.1,39.3,35.7,0,3.6,301-400 calories
+11023,Processed cheese,Food,Dairy Products,100,375,25.0,32.1,28.6,0,0,301-400 calories
+11024,Roquefort type,Food,Dairy Products,100,375,21.4,32.1,28.6,0,0,301-400 calories
+11025,Swiss,Food,Dairy Products,100,375,25.0,28.6,25.0,0,0,301-400 calories
+11014,Ice cream,Food,Dairy Products,100,160,3.2,9.6,8.5,0,15.4,101-200 calories
+11027,Scrambled or fried eggs,Food,Dairy Products,100,172,10.2,12.5,10.9,0,0.8,101-200 calories
+11028,Yolks,Food,Fats,100,353,17.6,29.4,23.5,0,0,301-400 calories
+11029,Butter,Food,Fats,100,714,0,78.6,71.4,0,0,701-800 calories
+11032,Hydrogenated cooking fat,Food,Fats,100,665,0,100.0,88.0,0,0,601-700 calories
+11033,Lard,Food,Fats,100,902,0,100.0,83.6,0,0,901-1000 calories
+11034,Margarine,Food,Fats,100,720,0,81.3,67.9,0,0,701-800 calories
+11036,Mayonnaise,Food,Fats,100,733,0,80.0,33.3,0,0,701-800 calories
+11037,Corn oil,Food,Fats,100,893,0,100.0,35.7,0,0,801-900 calories
+11038,Olive oil,Food,Fats,100,893,0,100.0,21.4,0,0,801-900 calories
+11039,Safflower seed oil,Food,Fats,100,893,0,100.0,21.4,0,0,801-900 calories
+11040,French dressing,Food,Fats,100,400,0,40.0,13.3,0,13.3,301-400 calories
+11041,Thousand Island sauce,Food,Fats,100,500,0,53.3,20.0,0,6.7,401-500 calories
+11174,Cantaloupe,Food,Fruits,100,11,0.3,0,0,0.6,2.4,1-100 calories
+11218,Watermelon,Food,Fruits,100,13,0.2,0.1,0,0.4,3.1,1-100 calories
+11163,Apple vinegar,Food,Fruits,100,14,0,0,0,0,3.0,1-100 calories
+11184,Grapefruit,Food,Fruits,100,18,0.4,0,0,0.4,4.9,1-100 calories
+11211,Raisins,Food,Fruits,100,261,2.3,0,0,0.8,93.2,201-300 calories
+11161,Watercress stems,Food,Fruits,100,18,2.0,0,0,0.6,2.0,1-100 calories
+11192,Olives,Food,Fruits,100,111,1.5,15.4,13.8,1.2,4.6,101-200 calories
+11199,Peaches,Food,Fruits,100,31,0.9,0,0,0.5,8.8,1-100 calories
+11194,Oranges,Food,Fruits,100,33,1.1,0,0,0.6,8.9,1-100 calories
+11217,Tangerines,Food,Fruits,100,35,0.9,0,0,0.9,8.8,1-100 calories
+11216,Strawberries,Food,Fruits,100,36,0,0,0,0.9,8.1,1-100 calories
+11197,Papaya,Food,Fruits,100,38,0.5,0,0,0.9,9.0,1-100 calories
+11175,Sour cherries,Food,Fruits,100,39,0.8,0.4,0,0.8,10.1,1-100 calories
+11214,Sweetened rhubarb,Food,Fruits,100,143,0.4,0,0,0.7,36.3,101-200 calories
+11178,Dates,Food,Fruits,100,284,2.2,0,0,2.0,75.3,201-300 calories
+11179,Dried figs,Food,Fruits,100,286,4.8,0,0,4.5,71.4,201-300 calories
+11165,Stewed or canned apples,Food,Fruits,100,42,0,0,0,0.8,10.8,1-100 calories
+11186,Grapes,Food,Fruits,100,46,0.7,0,0,0.5,10.5,1-100 calories
+11168,Apricots,Food,Fruits,100,48,0.9,0,0,0.6,12.3,1-100 calories
+11170,Avocado,Food,Fruits,100,171,1.9,16.7,11.1,1.7,5.6,101-200 calories
+11208,Prunes,Food,Fruits,100,50,0,0,0,0.3,11.7,1-100 calories
+11205,Pineapple,Food,Fruits,100,54,0.7,0,0,0.4,13.6,1-100 calories
+11164,Apples,Food,Fruits,100,54,0,0,0,0.8,13.8,1-100 calories
+11201,Pears,Food,Fruits,100,55,0.5,0.5,0,1.1,13.7,1-100 calories
+11171,Banana,Food,Fruits,100,57,0.7,0,0,0.6,15.3,1-100 calories
+11213,Raspberries,Food,Fruits,100,57,0,0,0,5.0,14.0,1-100 calories
+11176,Sweet cherries,Food,Fruits,100,57,0.9,0,0,0.7,13.2,1-100 calories
+11172,Blackberries,Food,Fruits,100,59,1.4,0.7,0,4.6,13.2,1-100 calories
+11167,Dried apricots,Food,Fruits,100,293,5.3,0,0,1.3,66.7,201-300 calories
+11202,Persimmons,Food,Fruits,100,60,0.8,0,0,1.6,16.0,1-100 calories
+11177,Sweetened cranberry sauce,Food,Fruits,100,191,0,0,0,0.4,51.3,101-200 calories
+11207,Plums,Food,Fruits,100,72,0.4,0,0,0.3,19.5,1-100 calories
+11180,Figs,Food,Fruits,100,79,1.8,0,0,0.9,19.3,1-100 calories
+11173,Blueberries,Food,Fruits,100,98,0.4,0,0,0.8,26.0,1-100 calories
+11189,Lemon juice,Drinks,Fruits,100,24,0,0,0,0,8.0,1-100 calories
+11185,Grapefruit juice,Drinks,Fruits,100,40,0.4,0,0,0.4,9.6,1-100 calories
+11195,Orange juice,Drinks,Fruits,100,45,0.8,0,0,0.1,10.0,1-100 calories
+11206,Pineapple juice,Drinks,Fruits,100,48,0.4,0,0,0.1,12.8,1-100 calories
+11162,Apple juice,Drinks,Fruits,100,50,0,0,0,0,13.6,1-100 calories
+11169,Apricots juice,Drinks,Fruits,100,56,0.4,0,0,0.8,14.4,1-100 calories
+11188,Grape juice,Drinks,Fruits,100,64,0.4,0,0,0,16.8,1-100 calories
+11210,Prune juice,Drinks,Fruits,100,71,0.4,0,0,0.3,18.8,1-100 calories
+11191,Frozen limeade concentrate,Drinks,Fruits,100,186,0,0,0,0,49.5,101-200 calories
+11190,Frozen lemonade concentrate,Drinks,Fruits,100,195,0,0,0,0,50.9,101-200 calories
+11297,Molasses,Food,Jellies,100,225,0,0,0,0,55.0,201-300 calories
+11296,Jellies,Food,Jellies,100,250,0,0,0,0,65.0,201-300 calories
+11298,Cane syrup,Food,Jellies,100,250,0,0,0,0,65.0,201-300 calories
+11308,Syrup,Food,Jellies,100,250,0,0,0,0,62.5,201-300 calories
+11307,Brown sugar,Food,Jellies,100,370,0,0,0,0,95.5,301-400 calories
+11309,Table blends sugar,Food,Jellies,100,275,0,0,0,0,72.5,201-300 calories
+11292,Honey,Food,Jellies,100,286,0,0,0,0,71.4,201-300 calories
+11042,Salt pork,Food,Meat,100,783,5.0,91.7,0,0,0,701-800 calories
+11043,Bacon,Food,Meat,100,594,25.0,50.0,43.8,0,6.3,501-600 calories
+11052,Dried corned beef hash,Food,Meat,100,205,33.9,7.1,7.1,0,0,201-300 calories
+11053,Pot pie,Food,Meat,100,211,7.9,12.3,11.0,0,14.1,201-300 calories
+11060,Broiled lamb chop,Food,Meat,100,417,20.9,30.4,28.7,0,0,401-500 calories
+11062,Braised lamb shoulder,Food,Meat,100,335,21.2,27.1,24.7,0,0,301-400 calories
+11050,Corned beef,Food,Meat,100,218,25.9,11.8,10.6,0,0,201-300 calories
+11055,Chicken,Food,Meat,100,218,27.1,10.6,8.2,0,0,201-300 calories
+11058,Fried chicken livers,Food,Meat,100,140,22.0,14.0,12.0,0,2.3,101-200 calories
+11070,Veal,Food,Meat,100,218,27.1,10.6,9.4,0,0,201-300 calories
+11049,Lean steak,Food,Meat,100,259,28.2,14.1,12.9,0,0,201-300 calories
+11054,Stew corned beef hash,Food,Meat,100,79,6.4,4.3,3.8,0,6.4,1-100 calories
+11063,Pork chop,Food,Meat,100,260,16.0,21.0,18.0,0,0,201-300 calories
+11069,Turkey,Food,Meat,100,265,27.0,15.0,0,0,0,201-300 calories
+11044,Beef,Food,Meat,100,288,27.1,18.8,17.6,0,0,201-300 calories
+11051,Canned corned beef hash,Food,Meat,100,141,14.1,9.4,8.2,0,7.1,101-200 calories
+11064,Pan-broiled ham,Food,Meat,100,341,18.8,25.9,22.4,0,0,301-400 calories
+11047,Roast beef,Food,Meat,100,459,18.8,42.4,41.2,0,0,401-500 calories
+11071,Roast,Food,Meat,100,359,15.3,16.5,15.3,0,0,301-400 calories
+11067,Pork roast,Food,Meat,100,365,24.7,28.2,24.7,0,0,301-400 calories
+11045,Hamburger,Food,Meat,100,288,24.7,20.0,17.6,0,0,201-300 calories
+11061,Roasted lamb leg,Food,Meat,100,365,23.3,16.3,16.3,0,0,301-400 calories
+11056,Fried chicken,Food,Meat,100,288,29.4,17.6,12.9,0,0,201-300 calories
+11059,Domestic duck,Food,Meat,100,370,16.0,28.0,0,0,0,301-400 calories
+11068,Pork sausage,Food,Meat,100,475,18.0,44.0,40.0,0,0,401-500 calories
+11066,Canned and spiced ham,Food,Meat,100,289,14.0,24.6,21.1,0,1.8,201-300 calories
+11057,Roasted chicken,Food,Meat,100,290,25.0,20.0,16.0,0,0,201-300 calories
+11048,Steak,Food,Meat,100,388,23.5,31.8,29.4,0,0,301-400 calories
+11311,Almonds,Food,Nuts,100,607,18.6,54.3,40.0,2.6,18.6,601-700 calories
+11312,Roasted and salted almonds,Food,Nuts,100,627,18.6,57.1,44.3,2.6,18.6,601-700 calories
+11322,Walnuts,Food,Nuts,100,650,14.0,64.0,14.0,2.0,16.0,601-700 calories
+11315,Sweetened coconut,Food,Nuts,100,548,2.0,40.0,38.0,4.0,52.0,501-600 calories
+11314,Cashews,Food,Nuts,100,560,17.1,45.7,40.0,1.3,28.6,501-600 calories
+11320,Sesame seeds,Food,Nuts,100,560,18.0,48.0,26.0,6.2,20.0,501-600 calories
+11321,Sunflower seeds,Food,Nuts,100,560,24.0,52.0,14.0,3.8,20.0,501-600 calories
+11317,Natural peanut butter,Food,Nuts,100,568,26.0,48.0,20.0,1.8,16.0,501-600 calories
+11313,Brazil nuts,Food,Nuts,100,653,14.3,67.1,44.3,2.9,10.0,601-700 calories
+11318,Peanuts,Food,Nuts,100,580,26.0,50.0,32.0,2.4,18.0,501-600 calories
+11316,Peanut butter,Food,Nuts,100,600,24.0,50.0,34.0,1.8,18.0,501-600 calories
+11319,Pecans,Food,Nuts,100,660,9.6,67.3,48.1,2.1,13.5,601-700 calories
+11072,Clams,Food,Seafood,100,102,14.1,1.2,0,0,2.4,101-200 calories
+11086,Scallops,Food,Seafood,100,104,18.0,8.0,0,0,10.0,101-200 calories
+11074,Crab meat,Food,Seafood,100,106,16.5,2.4,0,0,1.2,101-200 calories
+11088,Shrimp,Food,Seafood,100,129,27.1,1.2,0,0,0,101-200 calories
+11084,Salmon,Food,Seafood,100,141,20.0,5.9,1.2,0,0,101-200 calories
+11083,Oyster stew,Food,Seafood,100,147,22.4,7.1,1.2,0,0,101-200 calories
+11077,Haddock,Food,Seafood,100,159,18.8,5.9,4.7,0,7.1,101-200 calories
+11079,Herring,Food,Seafood,100,211,22.0,13.0,0,0,0,201-300 calories
+11080,Lobster,Food,Seafood,100,92,18.0,1.0,0,0,0,1-100 calories
+11073,Cod,Food,Seafood,100,170,28.0,5.0,0,0,0,101-200 calories
+11075,Fried fish sticks,Food,Seafood,100,179,17.0,8.9,4.5,0,7.1,101-200 calories
+11089,Swordfish,Food,Seafood,100,180,27.0,6.0,0,0,0,101-200 calories
+11085,Sardines,Food,Seafood,100,212,25.9,10.6,4.7,0,0,201-300 calories
+11078,Halibut,Food,Seafood,100,182,26.0,8.0,0,0,0,101-200 calories
+11081,Mackerel,Food,Seafood,100,182,21.2,10.6,0,0,0,101-200 calories
+11076,Flounder,Food,Seafood,100,200,30.0,8.0,0,0,0,101-200 calories
+11087,Shad,Food,Seafood,100,200,23.5,11.8,0,0,0,101-200 calories
+11090,Tuna,Food,Seafood,100,200,29.4,8.2,3.5,0,0,101-200 calories
+11267,Chicken soup,Food,Soups,100,30,1.6,0.8,0.8,0,4.0,1-100 calories
+11273,Vegetable soup,Food,Soups,100,32,1.6,0.8,0.8,0,5.6,1-100 calories
+11268,Clam chowder,Food,Soups,100,33,2.0,0.8,3.1,0.2,4.7,1-100 calories
+11265,Beef soup,Food,Soups,100,40,2.4,1.6,1.6,0.2,4.4,1-100 calories
+11270,Noodle soup,Food,Soups,100,46,2.4,1.6,1.2,0.1,5.2,1-100 calories
+11271,Split pea soup,Food,Soups,100,59,3.2,1.2,1.2,0.2,10.0,1-100 calories
+11272,Tomato soup,Food,Soups,100,71,2.4,2.9,2.4,0.2,9.0,1-100 calories
+11264,Bean soup,Food,Soups,100,76,3.2,2.0,1.6,0.2,12.0,1-100 calories
+11269,Cream soup,Food,Soups,100,78,2.7,4.7,4.3,0.5,7.1,1-100 calories
+11310,Tapioca cream pudding,Food,Sweets,100,134,4.0,4.0,3.6,0,16.8,101-200 calories
+11274,Apple betty,Food,Sweets,100,150,1.0,4.0,0,0.5,29.0,101-200 calories
+11301,Custard,Food,Sweets,100,204,5.4,8.5,7.7,0,26.2,201-300 calories
+11278,Cupcake,Food,Sweets,100,320,6.0,6.0,4.0,0,62.0,301-400 calories
+11286,Hard candies,Food,Sweets,100,321,0,0,0,0,100.0,301-400 calories
+11287,Marshmallows,Food,Sweets,100,327,3.3,0,0,0,76.7,301-400 calories
+11280,Gingerbread,Food,Sweets,100,327,3.6,12.7,10.9,0,50.9,301-400 calories
+11304,Pumpkin pie,Food,Sweets,100,204,3.8,9.2,8.5,6.2,26.2,201-300 calories
+11290,Doughnuts,Food,Sweets,100,409,6.1,21.2,12.1,0,51.5,401-500 calories
+11285,Fudge,Food,Sweets,100,411,0,13.3,12.2,0.1,88.9,401-500 calories
+11283,Candy,Food,Sweets,100,416,0,12.0,12.0,0,76.0,401-500 calories
+11277,Chocolate fudge,Food,Sweets,100,350,4.2,11.7,10.0,0.3,58.3,301-400 calories
+11279,Fruit cake,Food,Sweets,100,350,6.7,13.3,10.0,0.7,56.7,301-400 calories
+11288,Milk chocolate,Food,Sweets,100,518,3.6,10.7,10.7,0.4,78.6,501-600 calories
+11275,Bread pudding,Food,Sweets,100,187,5.5,6.0,5.5,0.1,28.0,101-200 calories
+11306,Sugar,Food,Sweets,100,417,0,0,0,0,100.0,401-500 calories
+11291,Gelatin,Food,Sweets,100,65,1.7,0,0,0,15.1,1-100 calories
+11302,Lemon meringue,Food,Sweets,100,250,3.3,10.0,8.3,0.1,37.5,201-300 calories
+11300,Cherry pie,Food,Sweets,100,252,2.2,9.6,8.1,0.1,40.7,201-300 calories
+11303,Mince,Food,Sweets,100,252,2.2,6.7,5.9,0.5,45.9,201-300 calories
+11276,Cakes,Food,Sweets,100,275,7.5,0,0,0,57.5,201-300 calories
+11282,Sponge cake,Food,Sweets,100,288,7.5,5.0,5.0,0,55.0,201-300 calories
+11305,Puddings sugar,Food,Sweets,100,385,0,0,0,0,99.5,301-400 calories
+11284,Chocolate creams,Food,Sweets,100,433,0,13.3,13.3,0,80.0,401-500 calories
+11289,Chocolate syrup,Food,Sweets,100,200,0,0,0,0,55.0,101-200 calories
+11100,Beetroots,Food,Vegetables,100,1,7.3,0,0,0,0.5,1-100 calories
+11125,Canned mushrooms,Food,Vegetables,100,10,1.7,0,0,0,3.3,1-100 calories
+11115,Cucumbers,Food,Vegetables,100,12,0,0,0,0.4,2.0,1-100 calories
+11124,Iceberg,Food,Vegetables,100,13,0,0,0,0.5,3.0,1-100 calories
+11122,Lentils,Food,Vegetables,100,106,7.5,0,0,1.2,19.0,101-200 calories
+11123,Lettuce,Food,Vegetables,100,14,1.0,0,0,0.5,2.0,1-100 calories
+11151,Squash,Food,Vegetables,100,17,0.5,0,0,0.3,3.8,1-100 calories
+11117,Eggplant,Food,Vegetables,100,17,1.1,0,0,0.6,5.0,1-100 calories
+11118,Endive,Food,Vegetables,100,18,1.8,0,0,1.1,3.5,1-100 calories
+11092,Asparagus,Food,Vegetables,100,19,1.0,0,0,0.5,3.1,1-100 calories
+11093,Beans,Food,Vegetables,100,20,0.8,0,0,0.6,4.8,1-100 calories
+11109,Celery,Food,Vegetables,100,20,1.0,0,0,1.0,4.0,1-100 calories
+11111,Chard,Food,Vegetables,100,20,1.3,0,0,0.9,4.7,1-100 calories
+11147,Radishes,Food,Vegetables,100,20,0,0,0,0.6,4.0,1-100 calories
+11155,Tomatoes,Food,Vegetables,100,21,0.8,0,0,0.4,3.8,1-100 calories
+11103,Sauerkraut,Food,Vegetables,100,21,0.7,0,0,0.8,4.7,1-100 calories
+11126,Mustard greens,Food,Vegetables,100,21,2.1,0,0,0.9,4.3,1-100 calories
+11104,Steamed cabbage,Food,Vegetables,100,24,1.2,0,0,0.8,5.3,1-100 calories
+11108,Cauliflower,Food,Vegetables,100,25,2.5,0,0,0.8,5.0,1-100 calories
+11138,Green sweet peppers,Food,Vegetables,100,25,1.0,0,0,1.4,6.0,1-100 calories
+11160,Steamed turnips,Food,Vegetables,100,26,0.6,0,0,1.2,5.8,1-100 calories
+11150,Spinach,Food,Vegetables,100,26,3.0,0,0,1.0,3.0,1-100 calories
+11137,Canned peppers,Food,Vegetables,100,26,0,0,0,0,5.3,1-100 calories
+11099,Beet greens,Food,Vegetables,100,27,2.0,0,0,1.4,6.0,1-100 calories
+11120,Kohlrabi,Food,Vegetables,100,29,1.4,0,0,1.1,6.4,1-100 calorie
+11101,Broccoli,Food,Vegetables,100,30,3.3,0,0,1.3,5.3,1-100 calories
+11105,Carrots,Food,Vegetables,100,30,0.7,0,0,0.6,6.7,1-100 calories
+11135,Split cooked peas,Food,Vegetables,100,115,8.0,0,0,0.4,21.0,101-200 calories
+11159,Turnip greens,Food,Vegetables,100,31,2.8,0.7,0,1.2,5.5,1-100 calories
+11127,Okra,Food,Vegetables,100,32,1.0,0,0,1.0,7.0,1-100 calories
+11148,Rutabagas,Food,Vegetables,100,32,0,0,0,1.4,8.0,1-100 calories
+11098,Bean sprouts,Food,Vegetables,100,34,2.0,0,0,0.6,6.0,1-100 calories
+11112,Collards,Food,Vegetables,100,34,3.3,0,0,1.3,5.3,1-100 calories
+11128,Onions,Food,Vegetables,100,38,1.0,0,0,0.8,8.6,1-100 calories
+11106,Grated carrots,Food,Vegetables,100,41,0.9,0,0,1.1,9.1,1-100 calories
+11119,Kale,Food,Vegetables,100,41,3.6,0.9,0,0.8,7.3,1-100 calories
+11129,Parsley,Food,Vegetables,100,44,0,0,0,2.0,10.0,1-100 calories
+11116,Dandelion greens,Food,Vegetables,100,44,2.8,0.6,0,1.8,8.9,1-100 calories
+11102,Brussels sprouts,Food,Vegetables,100,46,4.6,0,0,1.3,9.2,1-100 calories
+11149,Soybeans,Food,Vegetables,100,130,11.0,5.5,0,1.6,10.0,101-200 calories
+11091,Artichoke,Food,Vegetables,100,47,2.0,0,0,2.0,10.0,1-100 calories
+11136,Heated peas,Food,Vegetables,100,53,3.0,0,0,1.0,10.0,1-100 calories
+11131,Parsnips,Food,Vegetables,100,61,1.3,0.6,0,1.9,14.2,1-100 calories
+11132,Peas,Food,Vegetables,100,66,3.0,0,0,0.1,13.0,1-100 calories
+11141,French-fried potatoes,Food,Vegetables,100,258,0,11.7,5.0,0.7,33.3,201-300 calories
+11133,Steamed peas,Food,Vegetables,100,70,5.0,0,0,2.2,12.0,1-100 calories
+11146,Potato chips,Food,Vegetables,100,550,5.0,35.0,20.0,0,50.0,501-600 calories
+11134,Frozen peas,Food,Vegetables,100,73,5.0,0,0,1.8,12.0,1-100 calories
+11145,Steamed before peeling potatoes,Food,Vegetables,100,80,2.0,0,0,0.4,19.0,1-100 calories
+11095,Dry and cooked lima,Food,Vegetables,100,135,8.3,0,0,1.0,25.0,101-200 calories
+11114,Cooked or canned corn,Food,Vegetables,100,85,2.5,0,0,0.8,20.5,1-100 calories
+11094,Lima,Food,Vegetables,100,88,5.0,0,0,1.9,15.0,1-100 calories
+11153,Sweet potatoes,Food,Vegetables,100,141,1.8,0.9,0,0.9,32.7,101-200 calories
+11158,Tomato catsup,Food,Vegetables,100,88,0,0,0,0,23.5,1-100 calories
+11097,Red kidney,Food,Vegetables,100,88,5.8,0.4,0,1.0,16.2,1-100 calories
+11113,Corn,Food,Vegetables,100,92,3.0,1.0,0,0.8,21.0,1-100 calories
+11140,Baked potatoes,Food,Vegetables,100,100,2.0,0,0,0.5,22.0,1-100 calories
+11157,Tomato juice,Drinks,Vegetables,100,21,0.8,0,0,0.3,4.2,1-100 calories
