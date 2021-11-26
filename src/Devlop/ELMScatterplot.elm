@@ -172,9 +172,11 @@ wideExtent values =
     in
         result2
 
+-- Point name settings
+
 pointName : Nutrients -> (Nutrients -> String) -> (Nutrients -> Float) -> (Nutrients -> Float) -> String -> String -> Point
 pointName nutrients u v x y z =
-    Point (u nutrients ++ ", " ++ y ++ ": " ++ String.fromFloat (v nutrients) ++ "," ++ z ++ ": " ++ String.fromFloat (x nutrients)) (v nutrients) (x nutrients)
+    Point (u nutrients ++ ", " ++ y ++ ": " ++ String.fromFloat (v nutrients) ++ ", " ++ z ++ ": " ++ String.fromFloat (x nutrients)) (v nutrients) (x nutrients)
 
 point : ContinuousScale Float -> ContinuousScale Float -> Point -> Svg msg
 point scaleX scaleY yxPoint =
@@ -294,24 +296,24 @@ view model =
                 [
                     ul[][
                         li[][
-                            Html.text <| "Please choose a nutrient type."
-                            , Html.button [onClick (ChangeX (.calories, "calories"))][Html.text "Calories"]
-                            , Html.button [onClick (ChangeX (.proteins, "proteins"))][Html.text "Proteins"]
-                            , Html.button [onClick (ChangeX (.fat, "fat"))][Html.text "Fat"]
-                            , Html.button [onClick (ChangeX (.satfat, "satfat"))][Html.text "Saturated Fat"]
-                            , Html.button [onClick (ChangeX (.fiber, "fiber"))][Html.text "Fiber"]
-                            , Html.button [onClick (ChangeX (.carbs, "carbs"))][Html.text "Carbohydrates"]
+                            Html.text <| "Please choose a nutrient type for the x-axis."
+                            , Html.button [onClick (ChangeX (.calories, "Calories"))][Html.text "Calories"]
+                            , Html.button [onClick (ChangeX (.proteins, "Proteins"))][Html.text "Proteins"]
+                            , Html.button [onClick (ChangeX (.fat, "Fat"))][Html.text "Fat"]
+                            , Html.button [onClick (ChangeX (.satfat, "Saturated Fat"))][Html.text "Saturated Fat"]
+                            , Html.button [onClick (ChangeX (.fiber, "Fiber"))][Html.text "Fiber"]
+                            , Html.button [onClick (ChangeX (.carbs, "Carbohydrates"))][Html.text "Carbohydrates"]
                         ]
                     ]
                     , ul[][
                         li[][
-                            Html.text <| "Please choose a nutrient type."
-                            , Html.button [onClick (ChangeY (.calories, "calories"))][Html.text "Calories"]
-                            , Html.button [onClick (ChangeY (.proteins, "proteins"))][Html.text "Proteins"]
-                            , Html.button [onClick (ChangeY (.fat, "fat"))][Html.text "Fat"]
-                            , Html.button [onClick (ChangeY (.satfat, "satfat"))][Html.text "Saturated Fat"]
-                            , Html.button [onClick (ChangeY (.fiber, "fiber"))][Html.text "Fiber"]
-                            , Html.button [onClick (ChangeY (.carbs, "carbs"))][Html.text "Carbohydrates"]
+                            Html.text <| "Please choose a nutrient type for the y-axis."
+                            , Html.button [onClick (ChangeY (.calories, "Calories"))][Html.text "Calories"]
+                            , Html.button [onClick (ChangeY (.proteins, "Proteins"))][Html.text "Proteins"]
+                            , Html.button [onClick (ChangeY (.fat, "Fat"))][Html.text "Fat"]
+                            , Html.button [onClick (ChangeY (.satfat, "Saturated Fat"))][Html.text "Saturated Fat"]
+                            , Html.button [onClick (ChangeY (.fiber, "Fiber"))][Html.text "Fiber"]
+                            , Html.button [onClick (ChangeY (.carbs, "Carbohydrates"))][Html.text "Carbohydrates"]
                         ]
                     ] 
                     ,   scatterplot nutrients
