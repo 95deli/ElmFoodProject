@@ -13,7 +13,7 @@ Die Visualisierung erfolgte basierend auf einem Datensatz verschiedener Lebensmi
 Der Terminalbefehl `elm reactor` ermöglicht die Vorschau des Projekts, welche anschließend über `http://localhost:8000/` im Browser abgerufen werden kann.
 
 ## Datengrundlage
-Der zugrunde liegende [Datensatz] verschiedener Lebensmittel und deren Kalorien und Nährwerte wurde auf der Plattform bereitgestellt. Davon ausgehend wurden die Daten überarbeitet und unter [Daten] bereitgestellt.
+Der zugrunde liegende [Datensatz](https://www.kaggle.com/niharika41298/food-nutrition-analysis-eda) verschiedener Lebensmittel und deren Kalorien und Nährwerte wurde auf der Plattform bereitgestellt. Davon ausgehend wurden die Daten überarbeitet und unter [Daten](Daten) in [CSV](Daten/CSV) und [JSON](Daten/JSON) bereitgestellt.
 
 ## Pakete
 - [alex-tan/elm-tree-diagram (Version: 1.0.0)](https://package.elm-lang.org/packages/alex-tan/elm-tree-diagram/1.0.0)
