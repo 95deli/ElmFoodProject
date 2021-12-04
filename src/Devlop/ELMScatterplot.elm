@@ -260,8 +260,8 @@ scatterplot model =
         [ style [] [ TypedSvg.Core.text """
             .point circle { stroke: rgba(0, 0, 0,0.4); fill: rgba(255, 255, 255,0.3); }
             .point text { display: none; }
-            .point:hover circle { stroke: rgba(0, 0, 0,1.0); fill: rgb(118, 214, 78); }
-            .point:hover text { display: inline; }
+            .point:hover circle { stroke: rgba(0, 0, 0,1.0); fill: rgb(0, 205, 102); }
+            .point:hover text { display: inline; font-weight: bold }
           """ ]
         , g [ transform [ Translate 60 390 ] ]
             [ xAxis xValues
