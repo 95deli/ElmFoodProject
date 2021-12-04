@@ -17,6 +17,14 @@ import Html exposing (ul)
 import Html exposing (li)
 import Html.Events exposing (onClick)
 
+main =
+  Browser.element
+        { init = init
+        , update = update
+        , subscriptions = subscriptions
+        , view = view
+        }
+
 type Model
   = Error
   | Loading
@@ -50,6 +58,12 @@ type alias XYData =
     , yDescription : String
     , data : List Point
     }
+
+init : () -> ( Model, Cmd Msg )
+init _ =
+    ( Loading
+    , getCsv GotText
+    )
 
 getCsv : (Result Http.Error String -> Msg) -> Cmd Msg
 getCsv x = 
@@ -250,24 +264,34 @@ scatterplot model =
             (List.map (point xScaleLocal yScaleLocal) model.data)
         ]
 
-main =
-  Browser.element
-        { init = init
-        , update = update
-        , subscriptions = subscriptions
-        , view = view
-        }
-
-init : () -> ( Model, Cmd Msg )
-init _ =
-    ( Loading
-    , getCsv GotText
-    )
-
 subscriptions : Model -> Sub Msg
 subscriptions model =
     Sub.none
 
+update : Msg -> Model -> ( Model, Cmd Msg )
+update msg model =
+    case msg of
+        GotText result ->
+            case result of
+                Ok fullText ->
+                    ( Success <| { data = nutrientsList [ fullText ], xFunction = .carbs, yFunction = .proteins , xName = "Carbohydrates", yName = "Proteins"}, Cmd.none )
+
+                Err _ ->
+                    ( model, Cmd.none )
+        ChangeX (x, a) ->
+            case model of
+                Success m ->
+                    ( Success <| { data = m.data, xFunction = x, yFunction = m.yFunction, xName = a, yName = m.yName }, Cmd.none )
+
+                _ ->
+                    ( model, Cmd.none )
+        ChangeY (y, a) ->
+            case model of
+                Success m ->
+                    ( Success <| { data = m.data, xFunction = m.xFunction, yFunction = y, xName = m.xName, yName = a }, Cmd.none )
+
+                _ ->
+                    ( model, Cmd.none )
 
 view : Model -> Html Msg
 view model =
@@ -308,28 +332,3 @@ view model =
                     ] 
                     ,   scatterplot nutrients
                 ]
-
-update : Msg -> Model -> ( Model, Cmd Msg )
-update msg model =
-    case msg of
-        GotText result ->
-            case result of
-                Ok fullText ->
-                    ( Success <| { data = nutrientsList [ fullText ], xFunction = .carbs, yFunction = .proteins , xName = "Carbohydrates", yName = "Proteins"}, Cmd.none )
-
-                Err _ ->
-                    ( model, Cmd.none )
-        ChangeX (x, a) ->
-            case model of
-                Success m ->
-                    ( Success <| { data = m.data, xFunction = x, yFunction = m.yFunction, xName = a, yName = m.yName }, Cmd.none )
-
-                _ ->
-                    ( model, Cmd.none )
-        ChangeY (y, a) ->
-            case model of
-                Success m ->
-                    ( Success <| { data = m.data, xFunction = m.xFunction, yFunction = y, xName = m.xName, yName = a }, Cmd.none )
-
-                _ ->
-                    ( model, Cmd.none )
