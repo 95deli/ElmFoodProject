@@ -86,7 +86,7 @@ getCsv x =
 
 list : List String
 list =
-    [ "NutrientsFINAL.csv"]
+    [ "NutrientsFINAL.csv" ]
 
 csvStringToData : String -> List Nutrients
 csvStringToData csvRaw =
@@ -221,7 +221,7 @@ parallelCoordinatesPlot w ar model =
             [
                 TypedSvg.Core.text """
                 .parallelPoint { stroke: rgba(1, 0, 0,0.2);}
-                .parallelPoint:hover {stroke: rgb(173, 255, 47); stroke-width: 2;} 
+                .parallelPoint:hover {stroke: rgb(60, 179, 113); stroke-width: 2;} 
                 .parallelPoint text { display: none; }
                 .parallelPoint:hover text { display: inline; stroke: rgb(0, 0, 0); stroke-width: 0.1; font-size: small; font-family: calibri}  
                 """

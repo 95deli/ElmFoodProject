@@ -79,7 +79,7 @@ getCsv x =
 
 list : List String
 list =
-    [ "NutrientsFINAL.csv"]
+    [ "NutrientsFINAL.csv" ]
 
 csvStringToData : String -> List Nutrients
 csvStringToData csvRaw =
@@ -212,7 +212,7 @@ point scaleX scaleY yxPoint =
     g
         [
             class["point"]
-            ,fontSize <| Px 12.0
+            ,fontSize <| Px 15.0
             ,fontFamily ["calibri"]
             ,transform
                 [
@@ -260,8 +260,8 @@ scatterplot model =
         [ style [] [ TypedSvg.Core.text """
             .point circle { stroke: rgba(0, 0, 0,0.4); fill: rgba(255, 255, 255,0.3); }
             .point text { display: none; }
-            .point:hover circle { stroke: rgba(0, 0, 0,1.0); fill: rgb(0, 205, 102); }
-            .point:hover text { display: inline; font-weight: bold }
+            .point:hover circle { stroke: rgba(0, 0, 0,1.0); fill: rgb(60, 179, 113); }
+            .point:hover text { display: inline; }
           """ ]
         , g [ transform [ Translate 60 390 ] ]
             [ xAxis xValues
