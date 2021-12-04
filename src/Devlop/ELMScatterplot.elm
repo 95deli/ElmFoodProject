@@ -51,25 +51,21 @@ type alias XYData =
     , data : List Point
     }
 
--- Insert URL
-
 getCsv : (Result Http.Error String -> Msg) -> Cmd Msg
 getCsv x = 
     list
         |> List.map
             (\data ->
                 Http.get
-                    { url = "https://raw.githubusercontent.com/95deli/ElmFoodProject/main/Data/CSV/" ++ data
+                    { url = "https://raw.githubusercontent.com/95deli/ElmFoodProject/main/Daten/CSV/" ++ data
                     , expect = Http.expectString x
                     }
             )
         |> Cmd.batch
 
--- Insert .csv data
-
 list : List String
 list =
-    [ "nutrientsfinal.csv"]
+    [ "NutrientsFINAL.csv"]
 
 csvStringToData : String -> List Nutrients
 csvStringToData csvRaw =
@@ -77,8 +73,6 @@ csvStringToData csvRaw =
         |> Csv.Decode.decodeCsv decodingNutrients
         |> Result.toMaybe
         |> Maybe.withDefault []
-
--- CSV decoding for relevant columns (nutrient types)
 
 decodingNutrients : Csv.Decode.Decoder (Nutrients -> a) a
 decodingNutrients =

@@ -22,7 +22,6 @@ type alias Model =
 
 -- type alias TreeLayout =
 --     { orientation : TreeOrientation
---     , levelHeight : Int
 --     , subtreeDistance : Int
 --     , siblingDistance : Int
 --     , padding : Int
@@ -31,7 +30,7 @@ type alias Model =
 treeLayout : TreeLayout
 treeLayout =
     TreeLayout topToBottom
-            250 
+            250
             45
             300
             300
@@ -83,7 +82,7 @@ main =
 init : () -> ( Model, Cmd Msg )
 init () =
     ( { tree = TreeDiagram.node "" [], errorMsg = "Loading ..." }
-    , Http.get { url = "https://raw.githubusercontent.com/95deli/ElmFoodProject/main/Data/JSON/BaumhierarchieJSON.json"
+    , Http.get { url = "https://raw.githubusercontent.com/95deli/ElmFoodProject/main/Daten/JSON/BaumhierarchieJSON.json"
     , expect = Http.expectJson GotTree jsonDecoding }
     )
 
