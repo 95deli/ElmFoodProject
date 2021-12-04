@@ -19,6 +19,14 @@ import TypedSvg.Attributes.InPx exposing (x, y)
 import TypedSvg.Core exposing (Svg)
 import TypedSvg.Types exposing (AnchorAlignment(..), Length(..), Paint(..), Transform(..))
 
+main =
+  Browser.element
+        { init = init
+        , update = update
+        , subscriptions = subscriptions
+        , view = view
+        }
+
 type Model
   = Error
   | Loading
@@ -58,6 +66,12 @@ type alias MultiDimData =
     , data : List (List MultiDimPoint)
     }
 
+init : () -> ( Model, Cmd Msg )
+init _ =
+    ( Loading
+    , getCsv GotText
+    )
+
 getCsv : (Result Http.Error String -> Msg) -> Cmd Msg
 getCsv x = 
     list
@@ -92,10 +106,53 @@ decodingNutrients =
             |> Csv.Decode.andMap (Csv.Decode.field "carbs"(String.toFloat >> Result.fromMaybe "error parsing string"))
         )
 
+update : Msg -> Model -> ( Model, Cmd Msg )
+update msg model =
+    case msg of
+        GotText result ->
+            case result of
+                Ok fullText ->
+                    ( Success <| { data = nutrientsList [ fullText ], firstFunction = .proteins, secondFunction = .fat, thirdFunction = .satfat, fourthFunction = .fiber , firstName = "Proteins", secondName = "Fat", thirdName = "Saturated Fat", fourthName = "Fiber"}, Cmd.none )
+
+                Err _ ->
+                    ( model, Cmd.none )
+        Change1 (x, a) ->
+            case model of
+                Success m ->
+                    ( Success <| { data = m.data, firstFunction = x, secondFunction = m.secondFunction, thirdFunction = m.thirdFunction, fourthFunction = m.fourthFunction , firstName = a, secondName = m.secondName, thirdName = m.thirdName, fourthName = m.fourthName}, Cmd.none )
+
+                _ ->
+                    ( model, Cmd.none )
+        Change2 (y, a) ->
+            case model of
+                Success m ->
+                    ( Success <| { data = m.data, firstFunction = m.firstFunction, secondFunction = y, thirdFunction = m.thirdFunction, fourthFunction = m.fourthFunction , firstName = m.firstName, secondName = a, thirdName = m.thirdName, fourthName = m.fourthName}, Cmd.none )
+
+                _ ->
+                    ( model, Cmd.none )
+        Change3 (z, a) ->
+            case model of
+                Success m ->
+                    ( Success <| { data = m.data, firstFunction = m.firstFunction, secondFunction = m.secondFunction, thirdFunction = z, fourthFunction = m.fourthFunction , firstName = m.firstName, secondName = m.secondName, thirdName = a, fourthName = m.fourthName}, Cmd.none )
+
+                _ ->
+                    ( model, Cmd.none )
+        Change4 (c, a) ->
+            case model of
+                Success m ->
+                    ( Success <| { data = m.data, firstFunction = m.firstFunction, secondFunction = m.secondFunction, thirdFunction = m.thirdFunction, fourthFunction = c , firstName = m.firstName, secondName = m.secondName, thirdName = m.thirdName, fourthName = a}, Cmd.none )
+
+                _ ->
+                    ( model, Cmd.none )
+
 nutrientsList :List String -> List Nutrients
 nutrientsList list1 =
     List.map(\t -> csvStringToData t) list1
         |> List.concat
+
+subscriptions : Model -> Sub Msg
+subscriptions model =
+    Sub.none
 
 padding : Float
 padding =
@@ -237,23 +294,6 @@ parallelCoordinatesPlot w ar model =
                                 (List.map (\a -> drawPoint a.value a.pointName model.dimDescription) dataset)
                         )
                )
-main =
-  Browser.element
-        { init = init
-        , update = update
-        , subscriptions = subscriptions
-        , view = view
-        }
-
-init : () -> ( Model, Cmd Msg )
-init _ =
-    ( Loading
-    , getCsv GotText
-    )
-
-subscriptions : Model -> Sub Msg
-subscriptions model =
-    Sub.none
 
 view : Model -> Html Msg
 view model =
@@ -324,41 +364,3 @@ view model =
                              ]
                                 , parallelCoordinatesPlot 600 2 plotData
                         ]
-update : Msg -> Model -> ( Model, Cmd Msg )
-update msg model =
-    case msg of
-        GotText result ->
-            case result of
-                Ok fullText ->
-                    ( Success <| { data = nutrientsList [ fullText ], firstFunction = .proteins, secondFunction = .fat, thirdFunction = .satfat, fourthFunction = .fiber , firstName = "Proteins", secondName = "Fat", thirdName = "Saturated Fat", fourthName = "Fiber"}, Cmd.none )
-
-                Err _ ->
-                    ( model, Cmd.none )
-        Change1 (x, a) ->
-            case model of
-                Success m ->
-                    ( Success <| { data = m.data, firstFunction = x, secondFunction = m.secondFunction, thirdFunction = m.thirdFunction, fourthFunction = m.fourthFunction , firstName = a, secondName = m.secondName, thirdName = m.thirdName, fourthName = m.fourthName}, Cmd.none )
-
-                _ ->
-                    ( model, Cmd.none )
-        Change2 (y, a) ->
-            case model of
-                Success m ->
-                    ( Success <| { data = m.data, firstFunction = m.firstFunction, secondFunction = y, thirdFunction = m.thirdFunction, fourthFunction = m.fourthFunction , firstName = m.firstName, secondName = a, thirdName = m.thirdName, fourthName = m.fourthName}, Cmd.none )
-
-                _ ->
-                    ( model, Cmd.none )
-        Change3 (z, a) ->
-            case model of
-                Success m ->
-                    ( Success <| { data = m.data, firstFunction = m.firstFunction, secondFunction = m.secondFunction, thirdFunction = z, fourthFunction = m.fourthFunction , firstName = m.firstName, secondName = m.secondName, thirdName = a, fourthName = m.fourthName}, Cmd.none )
-
-                _ ->
-                    ( model, Cmd.none )
-        Change4 (c, a) ->
-            case model of
-                Success m ->
-                    ( Success <| { data = m.data, firstFunction = m.firstFunction, secondFunction = m.secondFunction, thirdFunction = m.thirdFunction, fourthFunction = c , firstName = m.firstName, secondName = m.secondName, thirdName = m.thirdName, fourthName = a}, Cmd.none )
-
-                _ ->
-                    ( model, Cmd.none )

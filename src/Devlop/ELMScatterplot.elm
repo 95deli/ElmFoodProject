@@ -99,6 +99,31 @@ decodingNutrients =
             |> Csv.Decode.andMap (Csv.Decode.field "carbs"(String.toFloat >> Result.fromMaybe "error parsing string"))
         )
 
+update : Msg -> Model -> ( Model, Cmd Msg )
+update msg model =
+    case msg of
+        GotText result ->
+            case result of
+                Ok fullText ->
+                    ( Success <| { data = nutrientsList [ fullText ], xFunction = .carbs, yFunction = .proteins , xName = "Carbohydrates", yName = "Proteins"}, Cmd.none )
+
+                Err _ ->
+                    ( model, Cmd.none )
+        ChangeX (x, a) ->
+            case model of
+                Success m ->
+                    ( Success <| { data = m.data, xFunction = x, yFunction = m.yFunction, xName = a, yName = m.yName }, Cmd.none )
+
+                _ ->
+                    ( model, Cmd.none )
+        ChangeY (y, a) ->
+            case model of
+                Success m ->
+                    ( Success <| { data = m.data, xFunction = m.xFunction, yFunction = y, xName = m.xName, yName = a }, Cmd.none )
+
+                _ ->
+                    ( model, Cmd.none )
+
 nutrientsList :List String -> List Nutrients
 nutrientsList list1 =
     List.map(\t -> csvStringToData t) list1
@@ -107,6 +132,10 @@ nutrientsList list1 =
 filterReducedNutrients : List Nutrients -> (Nutrients -> String) -> (Nutrients -> Float) -> (Nutrients -> Float) -> String -> String -> XYData
 filterReducedNutrients nutrientsliste a b c x y =
     XYData x y (List.map (\n -> pointName n a b c x y) nutrientsliste)
+
+subscriptions : Model -> Sub Msg
+subscriptions model =
+    Sub.none
 
 w : Float
 w =
@@ -120,12 +149,9 @@ padding : Float
 padding =
     60
 
-
 radius : Float
 radius =
     5.0
-
--- Axis section
 
 tickCount : Int
 tickCount =
@@ -134,7 +160,6 @@ tickCount =
 xAxis : List Float -> Svg msg
 xAxis values =
     Axis.bottom [ Axis.tickCount tickCount ] (xScale values)
-
 
 yAxis : List Float -> Svg msg
 yAxis values =
@@ -177,8 +202,6 @@ wideExtent values =
             adding result1 (0.0)       
     in
         result2
-
--- Point name settings
 
 pointName : Nutrients -> (Nutrients -> String) -> (Nutrients -> Float) -> (Nutrients -> Float) -> String -> String -> Point
 pointName nutrients u v x y z =
@@ -263,35 +286,6 @@ scatterplot model =
         , g [ transform [ Translate padding padding ] ]
             (List.map (point xScaleLocal yScaleLocal) model.data)
         ]
-
-subscriptions : Model -> Sub Msg
-subscriptions model =
-    Sub.none
-
-update : Msg -> Model -> ( Model, Cmd Msg )
-update msg model =
-    case msg of
-        GotText result ->
-            case result of
-                Ok fullText ->
-                    ( Success <| { data = nutrientsList [ fullText ], xFunction = .carbs, yFunction = .proteins , xName = "Carbohydrates", yName = "Proteins"}, Cmd.none )
-
-                Err _ ->
-                    ( model, Cmd.none )
-        ChangeX (x, a) ->
-            case model of
-                Success m ->
-                    ( Success <| { data = m.data, xFunction = x, yFunction = m.yFunction, xName = a, yName = m.yName }, Cmd.none )
-
-                _ ->
-                    ( model, Cmd.none )
-        ChangeY (y, a) ->
-            case model of
-                Success m ->
-                    ( Success <| { data = m.data, xFunction = m.xFunction, yFunction = y, xName = m.xName, yName = a }, Cmd.none )
-
-                _ ->
-                    ( model, Cmd.none )
 
 view : Model -> Html Msg
 view model =

@@ -14,6 +14,15 @@ import TypedSvg.Core exposing (Svg)
 import TypedSvg.Types as ST exposing (AnchorAlignment(..), Length(..), Paint(..), Transform(..))
 import TreeDiagram exposing (TreeLayout, topToBottom)
 
+main : Program () Model Msg
+main =
+    Browser.element
+        { init = init
+        , view = view
+        , update = update
+        , subscriptions = subscriptions
+        }
+
 type Msg
     = GotTree (Result Http.Error (TreeDiagram.Tree String))
 
@@ -26,6 +35,56 @@ type alias Model =
 --     , siblingDistance : Int
 --     , padding : Int
 --    }
+
+init : () -> ( Model, Cmd Msg )
+init () =
+    ( { tree = TreeDiagram.node "" [], errorMsg = "Loading ..." }
+    , Http.get { url = "https://raw.githubusercontent.com/95deli/ElmFoodProject/main/Daten/JSON/BaumhierarchieJSON.json"
+    , expect = Http.expectJson GotTree jsonDecoding }
+    )
+
+jsonDecoding : Json.Decode.Decoder (TreeDiagram.Tree String)
+jsonDecoding =
+    Json.Decode.map2
+        (\name children ->
+            case children of
+                Nothing ->
+                    TreeDiagram.node name []
+
+                Just c ->
+                    TreeDiagram.node name c
+        )
+        (Json.Decode.field "data" (Json.Decode.field "id" Json.Decode.string))
+        (Json.Decode.maybe <|
+            Json.Decode.field "children" <|
+                Json.Decode.list <|
+                    Json.Decode.lazy
+                        (\_ -> jsonDecoding)
+        )
+
+update : Msg -> Model -> ( Model, Cmd Msg )
+update msg model =
+    case msg of
+        GotTree (Ok newTree) ->
+            ( { model | tree = newTree, errorMsg = "No Error" }, Cmd.none )
+
+        GotTree (Err error) ->
+            ( { model
+                | tree = TreeDiagram.node "" []
+                , errorMsg =
+                    case error of
+                        Http.BadBody newErrorMsg ->
+                            newErrorMsg
+
+                        _ ->
+                            "Some other Error"
+              }
+            , Cmd.none
+            )
+
+subscriptions : Model -> Sub Msg
+subscriptions model =
+  Sub.none
 
 treeLayout : TreeLayout
 treeLayout =
@@ -70,67 +129,8 @@ drawNode n =
             [ text n ]
         ]
 
-main : Program () Model Msg
-main =
-    Browser.element
-        { init = init
-        , view = view
-        , update = update
-        , subscriptions = subscriptions
-        }
-
-init : () -> ( Model, Cmd Msg )
-init () =
-    ( { tree = TreeDiagram.node "" [], errorMsg = "Loading ..." }
-    , Http.get { url = "https://raw.githubusercontent.com/95deli/ElmFoodProject/main/Daten/JSON/BaumhierarchieJSON.json"
-    , expect = Http.expectJson GotTree jsonDecoding }
-    )
-
-subscriptions : Model -> Sub Msg
-subscriptions model =
-  Sub.none
-
-update : Msg -> Model -> ( Model, Cmd Msg )
-update msg model =
-    case msg of
-        GotTree (Ok newTree) ->
-            ( { model | tree = newTree, errorMsg = "No Error" }, Cmd.none )
-
-        GotTree (Err error) ->
-            ( { model
-                | tree = TreeDiagram.node "" []
-                , errorMsg =
-                    case error of
-                        Http.BadBody newErrorMsg ->
-                            newErrorMsg
-
-                        _ ->
-                            "Some other Error"
-              }
-            , Cmd.none
-            )
-
 view : Model -> Html Msg
 view model =
     div []
         [ TreeDiagram.Svg.draw treeLayout drawNode drawLine model.tree
         ]
-
-jsonDecoding : Json.Decode.Decoder (TreeDiagram.Tree String)
-jsonDecoding =
-    Json.Decode.map2
-        (\name children ->
-            case children of
-                Nothing ->
-                    TreeDiagram.node name []
-
-                Just c ->
-                    TreeDiagram.node name c
-        )
-        (Json.Decode.field "data" (Json.Decode.field "id" Json.Decode.string))
-        (Json.Decode.maybe <|
-            Json.Decode.field "children" <|
-                Json.Decode.list <|
-                    Json.Decode.lazy
-                        (\_ -> jsonDecoding)
-        )
