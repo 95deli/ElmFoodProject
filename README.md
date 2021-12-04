@@ -10,7 +10,16 @@ Die Visualisierung erfolgte basierend auf einem Datensatz verschiedener Lebensmi
 - Baumhierarchie
 
 ## Vorschau
-Der Terminalbefehl `elm reactor` ermöglicht die Vorschau des Projekts, welche anschließend über `http://localhost:8000/` im Browser abgerufen werden kann.
+#### Website ansehen
+Die Visualisierungen sind als Website über folgenden Link abrufbar:
+
+#### Repository herunterladen und lokal ansehen
+1. Repository als .zip-Datei herunterladen und entpacken
+2. Pakete installieren ([elm.json](elm.json) für benötigte Pakete ansehen)
+3. Ordnerpfad über den Terminal aufrufen
+4. Terminalbefehl `elm reactor` eingeben
+5. `http://localhost:8000/` im Browser eingeben
+6. Visualisierungen im Ordner `src/Develop` anschauen
 
 ## Datengrundlage
 Der zugrunde liegende [Datensatz](https://www.kaggle.com/niharika41298/food-nutrition-analysis-eda) verschiedener Lebensmittel und deren Kalorien und Nährwerte wurde auf der Plattform bereitgestellt. Davon ausgehend wurden die Daten überarbeitet und unter [Daten](Daten) in [CSV](Daten/CSV) und [JSON](Daten/JSON) bereitgestellt.
