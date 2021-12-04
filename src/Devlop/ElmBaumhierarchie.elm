@@ -29,13 +29,6 @@ type Msg
 type alias Model =
     { tree : TreeDiagram.Tree String, errorMsg : String }
 
--- type alias TreeLayout =
---     { orientation : TreeOrientation
---     , subtreeDistance : Int
---     , siblingDistance : Int
---     , padding : Int
---    }
-
 init : () -> ( Model, Cmd Msg )
 init () =
     ( { tree = TreeDiagram.node "" [], errorMsg = "Loading ..." }
