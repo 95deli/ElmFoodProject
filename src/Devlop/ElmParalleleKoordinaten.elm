@@ -72,7 +72,7 @@ getCsv x =
 
 list : List String
 list =
-    [ "NutrientsFINAL2.csv"]
+    [ "NutrientsFINAL.csv"]
 
 csvStringToData : String -> List Nutrients
 csvStringToData csvRaw =
