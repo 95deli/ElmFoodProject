@@ -12,6 +12,7 @@ Die Visualisierung erfolgte basierend auf einem Datensatz verschiedener Lebensmi
 ## Vorschau
 #### Website ansehen
 Die Visualisierungen sind als Website über folgenden Link abrufbar:
+https://95deli.github.io/ElmFoodProject/
 
 #### Repository herunterladen und lokal ansehen
 1. Repository als .zip-Datei herunterladen und entpacken
