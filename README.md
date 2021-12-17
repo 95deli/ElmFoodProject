@@ -1,29 +1,31 @@
 # ElmFoodProject
+ELM-Projekt im Rahmen des Moduls "Information Retrieval und Visualisierung":
 Visualisierung von Nährwerten in Lebensmitteln
-ELM-Projekt im Rahmen des Moduls "Information Retrieval und Visualisierung"
 
-## Intro
+## Projektbeschreibung
 Ziel des Projektes ist die Umsetzung von drei ausgewählten Visualisierungstechniken mithilfe der funktionalen Programmiersprache [Elm](https://elm-lang.org/). 
-Die Visualisierung erfolgte basierend auf einem Datensatz verschiedener Lebensmittel und deren Nährwerte anhand der folgenden Visualisierungstechniken:
+Die Visualisierung erfolgte basierend auf einem [Datensatz](https://www.kaggle.com/niharika41298/food-nutrition-analysis-eda) verschiedener Lebensmittel und deren Nährwerte und Kalorien anhand der folgenden Visualisierungstechniken:
 - Scatterplot
 - Parallele Koordinaten
 - Baumhierarchie
 
-## Vorschau
-#### Website ansehen
-Die Visualisierungen sind als Website über folgenden Link abrufbar:
+## Projektwebseite
+Die Visualisierungen sind als Webseite über folgenden Link abrufbar:
 https://95deli.github.io/ElmFoodProject/
 
-#### Repository herunterladen und lokal ansehen
+## Projektbericht
+Der Bericht zu diesem Projekt befindet sich im Ordner [Bericht](Bericht).
+
+## Datengrundlage
+Der zugrunde liegende [Datensatz](https://www.kaggle.com/niharika41298/food-nutrition-analysis-eda) stammt von der Plattform Kaggle. Davon ausgehend wurden die Daten überarbeitet und unter [Daten](Daten) in [CSV](Daten/CSV) und [JSON](Daten/JSON) bereitgestellt.
+
+## Lokale Bereitstellung
 1. Repository als .zip-Datei herunterladen und entpacken
 2. Pakete installieren ([elm.json](elm.json) für benötigte Pakete ansehen)
 3. Ordnerpfad über den Terminal aufrufen
 4. Terminalbefehl `elm reactor` eingeben
 5. `http://localhost:8000/` im Browser eingeben
 6. Visualisierungen im Ordner `src/Develop` anschauen
-
-## Datengrundlage
-Der zugrunde liegende [Datensatz](https://www.kaggle.com/niharika41298/food-nutrition-analysis-eda) verschiedener Lebensmittel und deren Kalorien und Nährwerte wurde auf der Plattform bereitgestellt. Davon ausgehend wurden die Daten überarbeitet und unter [Daten](Daten) in [CSV](Daten/CSV) und [JSON](Daten/JSON) bereitgestellt.
 
 ## Pakete
 - [alex-tan/elm-tree-diagram (Version: 1.0.0)](https://package.elm-lang.org/packages/alex-tan/elm-tree-diagram/1.0.0)
