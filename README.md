@@ -1,6 +1,5 @@
 # ElmFoodProject
-ELM-Projekt im Rahmen des Moduls "Information Retrieval und Visualisierung":
-Visualisierung von Nährwerten in Lebensmitteln
+ELM-Projekt im Rahmen des Moduls "Information Retrieval und Visualisierung"
 
 ## Projektbeschreibung
 Ziel des Projektes ist die Umsetzung von drei ausgewählten Visualisierungstechniken mithilfe der funktionalen Programmiersprache [Elm](https://elm-lang.org/). 
@@ -11,13 +10,13 @@ Die Visualisierung erfolgte basierend auf einem [Datensatz](https://www.kaggle.c
 
 ## Projektwebseite
 Die Visualisierungen sind als Webseite über folgenden Link abrufbar:
-https://95deli.github.io/ElmFoodProject/
+https://95deli.github.io/ElmFoodProject/.
 
 ## Projektbericht
 Der Bericht zu diesem Projekt befindet sich im Ordner [Bericht](Bericht).
 
 ## Datengrundlage
-Der zugrunde liegende [Datensatz](https://www.kaggle.com/niharika41298/food-nutrition-analysis-eda) stammt von der Plattform Kaggle. Davon ausgehend wurden die Daten überarbeitet und unter [Daten](Daten) in [CSV](Daten/CSV) und [JSON](Daten/JSON) bereitgestellt.
+Der zugrunde liegende [Datensatz](https://www.kaggle.com/niharika41298/food-nutrition-analysis-eda) stammt von der Plattform Kaggle. Davon ausgehend wurden die Daten überarbeitet und im Ordner [Daten](Daten) in [CSV](Daten/CSV) und [JSON](Daten/JSON) bereitgestellt.
 
 ## Lokale Bereitstellung
 1. Repository als .zip-Datei herunterladen und entpacken
